@@ -13,7 +13,7 @@
 title: My Website
 
 # Your name to show in the footer
-author: Kyongmini
+author: kyongmini
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -22,8 +22,8 @@ author: Kyongmini
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
+    - Machine Learning/Deep Learning study: "https://beautifuljekyll.com"
+    - Optics: "https://www.markdowntutorial.com/"
   Author's home: "https://deanattali.com"
 
 ################
