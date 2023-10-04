@@ -22,7 +22,7 @@ author: kyongmini
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Machine Learning/Deep Learning study: "https://beautifuljekyll.com"
+    - Machine Learning/Deep Learning study: "https:machinelearning.github.io/"
     - Optics: "https://www.markdowntutorial.com/"
   Author's home: "https://deanattali.com"
 
