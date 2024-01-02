@@ -11,7 +11,7 @@ comments: true
 {: .box-success}
 It is a '숨겨진 패턴' class of Winter Semister. I'll post the hidden pattern we found.
 
-
+/*
 ## Here is a secondary heading
 
 [This is a link to a different site](https://deanattali.com/) and [this is a link to a section inside this page](#local-urls).
@@ -24,7 +24,7 @@ Here's a table:
 | Ten | Eleven | Nine |
 | Seven | Eight | Six |
 | Two | Three | One |
-
+*/
 
 Here's my codes. They are codes for collecting the images of curry. First, you need to install 'beautifulsoup4', 'requests', 'Pillow'
 ~~~
