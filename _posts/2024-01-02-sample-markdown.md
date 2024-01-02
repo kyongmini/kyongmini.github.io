@@ -9,9 +9,8 @@ comments: true
 ---
 
 {: .box-success}
-This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/tables/etc.<br/>I also encourage you to look at the [code that created this post](https://raw.githubusercontent.com/daattali/beautiful-jekyll/master/_posts/2020-02-28-sample-markdown.md) to learn some more advanced tips about using markdown in Beautiful Jekyll.
+It is a '숨겨진 패턴' class of Winter Semister. I'll post the hidden pattern we found.
 
-**Here is some bold text**
 
 ## Here is a secondary heading
 
@@ -26,22 +25,15 @@ Here's a table:
 | Seven | Eight | Six |
 | Two | Three | One |
 
-How about a yummy crepe?
 
-![Crepe](https://beautifuljekyll.com/assets/img/crepe.jpg)
-
-It can also be centered!
-
-![Crepe](https://beautifuljekyll.com/assets/img/crepe.jpg){: .mx-auto.d-block :}
-
-Here's a code chunk:
-
+Here's my codes. They are codes for collecting the images of curry. First, you need to install 'beautifulsoup4', 'requests', 'Pillow'
 ~~~
 !pip install beautifulsoup4
 !pip install requests
 !pip install Pillow
 ~~~
 
+Second, you input your website URL you want to collect the images in the 'url'.
 ~~~
 import requests
 from bs4 import BeautifulSoup
@@ -87,7 +79,9 @@ for image in images:
 
 print(f'All images have been downloaded and saved in {folder_name}/')
 ~~~
+if it is successfully downloaded, it will output the **All images have been downloaded and saved in 'your folder name'**
 
+Finally, you converted the files into the images! 
 ~~~
 from PIL import Image
 import os
