@@ -420,6 +420,7 @@ total_scores
 ~~~
 
 **Main Ingredient Total Points**
+
 | Main Ingredient | Total Point |
 | :------ |:--- |
 | Beef | 52 points |
@@ -428,6 +429,7 @@ total_scores
 | Tofu | 26 points |
 
 **Side Dish Total Points**
+
 | Side Dish | Total Point |
 | :------ |:--- |
 | Rice | 70 points |
@@ -435,6 +437,7 @@ total_scores
 | Noodles | 39 points |
 
 **Topping Total Points**
+
 | Topping | Total Point |
 | :------ |:--- |
 | Pork Cutlet | 83 points |
@@ -443,6 +446,7 @@ total_scores
 | Garlic Flakes | 12 points |
 
 **Curry Style Total Points**
+
 | Curry Style | Total Point |
 | :------ |:--- |
 | Korean | 59 points |
