@@ -12,13 +12,11 @@ comments: true
 It is a '숨겨진 패턴' class of Winter Semister. I'll post the code I used to find hidden patterns.
 
 
-## Here is a secondary heading
-
 [This is a link to a different site](https://deanattali.com/) and [this is a link to a section inside this page](#local-urls).
 
+## Before I look at the code,,
 
-
-Here's my codes. They are codes for collecting the images of curry. First, you need to install 'beautifulsoup4', 'requests', 'Pillow', 'pandas'.
+Here's the codes. They are codes for collecting the images of curry. First, you need to install 'beautifulsoup4', 'requests', 'Pillow', 'pandas'.
 ~~~
 !pip install beautifulsoup4
 !pip install requests
@@ -26,7 +24,7 @@ Here's my codes. They are codes for collecting the images of curry. First, you n
 !pip install pandas
 ~~~
 
-** 1. Extracting Images (Disabled)**
+### 1. Extracting Images (Disabled)
 ~~~
 import requests
 from bs4 import BeautifulSoup
@@ -101,16 +99,70 @@ for filename in os.listdir(folder_name):
 print("Conversion complete.")
 ~~~
 
-**2. Tables and Graphs of Curry Cutting styles by country**
+### 2. Tables and Graphs of Curry Cutting styles by country
+
+~~~
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Data for the graph
+categories = ['dice', 'chop', 'slice', 'mince']
+korean_meat = [7, 2, 0, 0]  # Korean style meat cutting
+korean_onion = [4, 1, 4, 0]  # Korean style onion cutting
+japanese_meat = [9, 0, 0, 0]  # Japanese style meat cutting
+japanese_onion = [2, 1, 5, 0]  # Japanese style onion cutting
+indian_meat = [9, 0, 0, 0]  # Indian style meat cutting
+indian_onion = [4, 2, 1, 2]  # Indian style onion cutting
+
+# X locations for the groups
+bar_width = 0.35
+index = np.arange(len(categories))
+
+# Plotting the graph
+fig, ax = plt.subplots(3, 1, figsize=(10, 15))
+
+# Korean Style
+ax[0].bar(index, korean_meat, bar_width, color='r', label='Meat')
+ax[0].bar(index + bar_width, korean_onion, bar_width, color='b', label='Onion')
+ax[0].set_title('Korean Curry Cutting Styles')
+ax[0].set_xticks(index + bar_width / 2)
+ax[0].set_xticklabels(categories)
+ax[0].legend()
+
+# Japanese Style
+ax[1].bar(index, japanese_meat, bar_width, color='r', label='Meat')
+ax[1].bar(index + bar_width, japanese_onion, bar_width, color='b', label='Onion')
+ax[1].set_title('Japanese Curry Cutting Styles')
+ax[1].set_xticks(index + bar_width / 2)
+ax[1].set_xticklabels(categories)
+ax[1].legend()
+
+# Indian Style
+ax[2].bar(index, indian_meat, bar_width, color='r', label='Meat')
+ax[2].bar(index + bar_width, indian_onion, bar_width, color='b', label='Onion')
+ax[2].set_title('Indian Curry Cutting Styles')
+ax[2].set_xticks(index + bar_width / 2)
+ax[2].set_xticklabels(categories)
+ax[2].legend()
+
+plt.tight_layout()
+plt.show()
+~~~
+
 
 Here's a table:
 
-| Number | Next number | Previous number |
+| Meat Cutting Style | Onion Cutting Style | Source |
 | :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
+| dice | dice | (https://www.10000recipe.com/recipe/6851792) |
+| dice | slice | Nine |
+| dice | slice | Six |
+| dice | dice | One |
+| chop | chop | Four |
+| dice | dice | Nine |
+| chop | slice | Six |
+| dice | dice | One |
+| dice | slice | One |
 
 And here is the same code with syntax highlighting:
 
