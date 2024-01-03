@@ -3,7 +3,6 @@ layout: post
 title: 숨겨진 패턴.
 subtitle: 음식 속 숨겨진 패턴 찾기!
 gh-repo: daattali/beautiful-jekyll
-gh-badge: [star, fork, follow]
 tags: [test]
 comments: true
 ---
@@ -453,16 +452,68 @@ total_scores
 | Japanese | 15 points |
 | Indian | 52 points |
 
+Additionally, let's find the total score of the card by category.
+
+~~~
+import matplotlib.pyplot as plt
+
+# 데이터 준비
+main_ingredients_1 = ['Beef', 'Pork', 'Chicken', 'Tofu']
+main_points_1 = [52, 25, 23, 26]
+
+side_dishes = ['Rice', 'Bread', 'Noodles']
+side_points = [70, 17, 39]
+
+toppings = ['Pork Cutlet', 'Fried Shrimp', 'Flakes', 'Garlic Flakes']
+topping_points = [83, 20, 11, 12]
+
+styles = ['Korean-style', 'Japanese-style', 'Indian-style']
+style_points = [59, 15, 52]
+
+# 4개의 서브플롯 생성
+fig, axs = plt.subplots(2, 2, figsize=(15, 10))
+
+# 첫 번째 그래프: Main Ingredient Total Points
+axs[0, 0].bar(main_ingredients_1, main_points_1, color='skyblue')
+axs[0, 0].set_title('Main Ingredient Total Points')
+axs[0, 0].set_xlabel('Ingredients')
+axs[0, 0].set_ylabel('Total Points')
+for i, v in enumerate(main_points_1):
+    axs[0, 0].text(i, v + 1, str(v), color='blue', fontweight='bold', ha='center')
+
+# 두 번째 그래프: Side Dish Total Points
+axs[0, 1].bar(side_dishes, side_points, color='red')
+axs[0, 1].set_title('Side Dish Total Points')
+axs[0, 1].set_xlabel('Side Dishes')
+axs[0, 1].set_ylabel('Total Points')
+for i, v in enumerate(side_points):
+    axs[0, 1].text(i, v + 1, str(v), color='red', fontweight='bold', ha='center')
+
+# 세 번째 그래프: Topping Total Points
+axs[1, 0].bar(toppings, topping_points, color='green')
+axs[1, 0].set_title('Topping Total Points')
+axs[1, 0].set_xlabel('Toppings')
+axs[1, 0].set_ylabel('Total Points')
+for i, v in enumerate(topping_points):
+    axs[1, 0].text(i, v + 1, str(v), color='green', fontweight='bold', ha='center')
+
+# 네 번째 그래프: Style Total Points
+axs[1, 1].bar(styles, style_points, color='purple')
+axs[1, 1].set_title('Style Total Points')
+axs[1, 1].set_xlabel('Styles')
+axs[1, 1].set_ylabel('Total Points')
+for i, v in enumerate(style_points):
+    axs[1, 1].text(i, v + 1, str(v), color='purple', fontweight='bold', ha='center')
+
+# 레이아웃 조정
+plt.tight_layout()
+plt.show()
+~~~
+
+Then, we can get graph below.
 
 
-And here is the same code yet again but with line numbers:
 
-{% highlight javascript linenos %}
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-{% endhighlight %}
 
 ## Boxes
 You can add notification, warning and error boxes like this:
