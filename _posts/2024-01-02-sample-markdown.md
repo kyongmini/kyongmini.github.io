@@ -150,19 +150,19 @@ plt.show()
 ~~~
 
 
-Here's a table:
+Here's a Korean Curry table:
 
 | Meat Cutting Style | Onion Cutting Style | Source |
 | :------ |:--- | :--- |
-| dice | dice | (https://www.10000recipe.com/recipe/6851792) |
-| dice | slice | Nine |
-| dice | slice | Six |
-| dice | dice | One |
-| chop | chop | Four |
-| dice | dice | Nine |
-| chop | slice | Six |
-| dice | dice | One |
-| dice | slice | One |
+| dice | dice | [source1]<https://www.10000recipe.com/recipe/6851792> |
+| dice | slice | [source2]<https://www.10000recipe.com/recipe/6844505> |
+| dice | slice | [source3]<https://wtable.co.kr/recipes/mMM45amBYXyqzg4WMLCjKCgG> |
+| dice | dice | [source4]<https://www.sbfoods-worldwide.com/ko/recipes/010.html> |
+| chop | chop | [source5]<https://themoonworld.com/%EA%B3%A0%EC%86%8C%ED%95%98%EA%B3%A0-%EC%A7%84%ED%95%9C-%EC%9A%B0%EC%9C%A0%EC%B9%B4%EB%A0%88-%EB%A7%8C%EB%93%A4%EA%B8%B0/#google_vignette> |
+| dice | dice | [source6]<https://www.10000recipe.com/recipe/69013> |
+| chop | slice | [source7]<https://www.10000recipe.com/recipe/6834483> |
+| dice | dice | [source8]<https://www.10000recipe.com/recipe/6911352> |
+| dice | slice | [source9]<https://www.youtube.com/watch?v=lCwcPiDE3Sk> |
 
 And here is the same code with syntax highlighting:
 
