@@ -311,6 +311,13 @@ df.to_excel('curry_recipes.xlsx', index=False)
 print("엑셀 파일 저장 완료!")
 ~~~
 
+### Warning
+
+{: .box-warning}
+**Attention! :** The code above is a code that separates ingredients and cooking orders by spacing, so there are slight differences, so the error script was personally modified in Excel.
+
+
+
 ## 4. Survey
 
 We set **first preference's weight : 3 points, second preference's weight : 2 points, third preference's weight : 1 point**
