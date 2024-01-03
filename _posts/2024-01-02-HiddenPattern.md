@@ -361,6 +361,95 @@ number_weights_sorted
 
 Then, we get the total point of each Card number.
 
+And Let's categorize them. Here's the code.
+~~~
+# Given the data from the user, we will tally the scores for each category (main ingredient, side dish, topping, curry type)
+# The user has provided the scores associated with each card number and wants a separate tally for each category.
+
+# Assign the provided data to Python data structures
+menu_items = {
+    1: ['소고기', '밥', '돈까스', '한국식 카레'],
+    2: ['돼지고기', '빵', '새우튀김', '한국식 카레'],
+    3: ['닭고기', '면', '새우튀김', '한국식 카레'],
+    4: ['닭고기', '밥', '돈까스', '한국식 카레'],
+    5: ['소고기', '빵', '돈까스', '일본식 카레'],
+    6: ['소고기', '밥', '새우튀김', '인도식 카레'],
+    7: ['돼지고기', '밥', '후레이크', '인도식 카레'],
+    8: ['돼지고기', '밥', '마늘 후레이크', '인도식 카레'],
+    9: ['두부', '면', '돈까스', '인도식 카레'],
+    10: ['돼지고기', '밥', '돈까스', '한국식 카레'],
+    11: ['소고기', '면', '마늘 후레이크', '한국식 카레'],
+    12: ['닭고기', '빵', '돈까스', '인도식 카레'],
+    13: ['닭고기', '밥', '마늘 후레이크', '일본식 카레'],
+    14: ['돼지고기', '면', '돈까스', '일본식 카레'],
+    15: ['두부', '밥', '새우튀김', '일본식 카레'],
+    16: ['두부', '빵', '마늘 후레이크', '한국식 카레']
+}
+
+# Card scores from the uploaded image
+card_scores = {
+    1: 33, 2: 6, 3: 4, 4: 6, 5: 4, 6: 9, 7: 11,
+    8: 0, 9: 25, 10: 4, 11: 6, 12: 7, 13: 6, 14: 4,
+    15: 1, 16: 0
+}
+
+# Initialize dictionaries to hold the total points for each category
+total_scores = {
+    'main': {},
+    'side': {},
+    'topping': {},
+    'type': {}
+}
+
+# Function to add scores to the appropriate category
+def add_to_total_scores(category, item, score):
+    if item in total_scores[category]:
+        total_scores[category][item] += score
+    else:
+        total_scores[category][item] = score
+
+# Iterate over each card and tally the scores for each category
+for card, items in menu_items.items():
+    score = card_scores[card]
+    add_to_total_scores('main', items[0], score)
+    add_to_total_scores('side', items[1], score)
+    add_to_total_scores('topping', items[2], score)
+    add_to_total_scores('type', items[3], score)
+
+total_scores
+~~~
+
+**Main Ingredient Total Points**
+| Main Ingredient | Total Point |
+| :------ |:--- |
+| Beef | 52 points |
+| Pork | 25 points |
+| Chicken | 23 points |
+| Tofu | 26 points |
+
+**Side Dish Total Points**
+| Side Dish | Total Point |
+| :------ |:--- |
+| Rice | 70 points |
+| Bread | 17 points |
+| Noodles | 39 points |
+
+**Topping Total Points**
+| Topping | Total Point |
+| :------ |:--- |
+| Pork Cutlet | 83 points |
+| Fried Shrimp | 20 points |
+| Flakes | 11 points |
+| Garlic Flakes | 12 points |
+
+**Curry Style Total Points**
+| Curry Style | Total Point |
+| :------ |:--- |
+| Korean | 59 points |
+| Japanese | 15 points |
+| Indian | 52 points |
+
+
 
 And here is the same code yet again but with line numbers:
 
