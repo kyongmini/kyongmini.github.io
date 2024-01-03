@@ -12,7 +12,7 @@ comments: true
 It is a '숨겨진 패턴' class of Winter Semister. I'll post the code I used to find hidden patterns.
 
 
-## Before I look at the code,,
+## Before You look at the code,,
 
 Here's the codes. They are codes for collecting the images of curry. First, you need to install 'beautifulsoup4', 'requests', 'Pillow', 'pandas'.
 ~~~
