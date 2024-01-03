@@ -9,31 +9,24 @@ comments: true
 ---
 
 {: .box-success}
-It is a '숨겨진 패턴' class of Winter Semister. I'll post the hidden pattern we found.
+It is a '숨겨진 패턴' class of Winter Semister. I'll post the code I used to find hidden patterns.
 
-/*
+
 ## Here is a secondary heading
 
 [This is a link to a different site](https://deanattali.com/) and [this is a link to a section inside this page](#local-urls).
 
-Here's a table:
 
-| Number | Next number | Previous number |
-| :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
-*/
 
-Here's my codes. They are codes for collecting the images of curry. First, you need to install 'beautifulsoup4', 'requests', 'Pillow'
+Here's my codes. They are codes for collecting the images of curry. First, you need to install 'beautifulsoup4', 'requests', 'Pillow', 'pandas'.
 ~~~
 !pip install beautifulsoup4
 !pip install requests
 !pip install Pillow
+!pip install pandas
 ~~~
 
-Second, you input your website URL you want to collect the images in the 'url'.
+** 1. Extracting Images (Disabled)**
 ~~~
 import requests
 from bs4 import BeautifulSoup
@@ -107,6 +100,17 @@ for filename in os.listdir(folder_name):
 
 print("Conversion complete.")
 ~~~
+
+**2. Tables and Graphs of Curry Cutting styles by country**
+
+Here's a table:
+
+| Number | Next number | Previous number |
+| :------ |:--- | :--- |
+| Five | Six | Four |
+| Ten | Eleven | Nine |
+| Seven | Eight | Six |
+| Two | Three | One |
 
 And here is the same code with syntax highlighting:
 
