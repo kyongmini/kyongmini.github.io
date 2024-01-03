@@ -11,7 +11,7 @@ comments: true
 It is a **'Hidden Pattern'** class of Winter Semister. I'll post the code I used to find hidden patterns.
 
 
-## Before You look at the code,,
+## Before you look at the code,,
 
 In order to execute the code, you need to install 'beautifulsoup4', 'requests', 'Pillow', 'pandas'.
 ~~~
@@ -522,24 +522,11 @@ Then, we can get graph below.
 
 
 
-
-## Boxes
-You can add notification, warning and error boxes like this:
-
 ### Notification
 
 {: .box-note}
-**Note:** This is a notification box.
+**Note:** We used Chat GPT to code.
 
-### Warning
-
-{: .box-warning}
-**Warning:** This is a warning box.
-
-### Error
-
-{: .box-error}
-**Error:** This is an error box.
 
 ## Local URLs in project sites {#local-urls}
 
