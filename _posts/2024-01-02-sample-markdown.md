@@ -185,24 +185,132 @@ Finally, here's a Indian Curry table:
 
 | Meat Cutting Style | Onion Cutting Style | Source |
 | :------ |:--- | :--- |
-| dice | dice | [source1](https://www.10000recipe.com/recipe/6851792) |
-| dice | slice | [source2](https://www.10000recipe.com/recipe/6844505) |
-| dice | slice | [source3](https://wtable.co.kr/recipes/mMM45amBYXyqzg4WMLCjKCgG) |
-| dice | dice | [source4](https://www.sbfoods-worldwide.com/ko/recipes/010.html) |
-| chop | chop | [source5](https://themoonworld.com/%EA%B3%A0%EC%86%8C%ED%95%98%EA%B3%A0-%EC%A7%84%ED%95%9C-%EC%9A%B0%EC%9C%A0%EC%B9%B4%EB%A0%88-%EB%A7%8C%EB%93%A4%EA%B8%B0/#google_vignette) |
-| dice | dice | [source6](https://www.10000recipe.com/recipe/69013) |
-| chop | slice | [source7](https://www.10000recipe.com/recipe/6834483) |
-| dice | dice | [source8](https://www.10000recipe.com/recipe/6911352) |
-| dice | slice | [source9](https://www.youtube.com/watch?v=lCwcPiDE3Sk) |
-And here is the same code with syntax highlighting:
+| dice | dice | [source1](https://www.10000recipe.com/recipe/6988698) |
+| dice | dice | [source2](https://www.10000recipe.com/recipe/6910009) |
+| dice | slice | [source3](https://www.10000recipe.com/recipe/6988698) |
+| dice | dice | [source4](https://themoonworld.com/%EB%B2%84%ED%84%B0%EC%B9%98%ED%82%A8%EC%BB%A4%EB%A6%AC-%ED%8E%98%EC%9D%B4%EC%8A%A4%ED%8A%B8-%EC%97%86%EC%9D%B4-%EC%9D%B8%EB%8F%84-%EB%B2%84%ED%84%B0%EC%B9%98%ED%82%A8%EC%BB%A4%EB%A6%AC-%EB%A7%8C/) |
+| dice | chop | [source5](http://tastekick.net/recipe/%EC%96%91%EA%B3%A0%EA%B8%B0-%EC%9D%B8%EB%8F%84-%EC%BB%A4%EB%A6%AC/) |
+| dice | chop | [source6](https://www.10000recipe.com/recipe/69013) |
+| dice | mince | [source7](https://www.10000recipe.com/recipe/6839725) |
+| dice | mince | [source8](https://www.10000recipe.com/recipe/1773403) |
+| dice | dice | [source9](https://www.10000recipe.com/recipe/6988698) |
 
-```javascript
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-```
+*We looked into the recipe for curry that must have onions and meat in it.
 
+And the code and graph for the above tables.
+
+~~~
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Data for the graph
+categories = ['dice', 'chop', 'slice', 'mince']
+korean_meat = [7, 2, 0, 0]  # Korean style meat cutting
+korean_onion = [4, 1, 4, 0]  # Korean style onion cutting
+japanese_meat = [9, 0, 0, 0]  # Japanese style meat cutting
+japanese_onion = [2, 1, 5, 0]  # Japanese style onion cutting
+indian_meat = [9, 0, 0, 0]  # Indian style meat cutting
+indian_onion = [4, 2, 1, 2]  # Indian style onion cutting
+
+# X locations for the groups
+bar_width = 0.35
+index = np.arange(len(categories))
+
+# Plotting the graph
+fig, ax = plt.subplots(3, 1, figsize=(10, 15))
+
+# Korean Style
+ax[0].bar(index, korean_meat, bar_width, color='r', label='Meat')
+ax[0].bar(index + bar_width, korean_onion, bar_width, color='b', label='Onion')
+ax[0].set_title('Korean Curry Cutting Styles')
+ax[0].set_xticks(index + bar_width / 2)
+ax[0].set_xticklabels(categories)
+ax[0].legend()
+
+# Japanese Style
+ax[1].bar(index, japanese_meat, bar_width, color='r', label='Meat')
+ax[1].bar(index + bar_width, japanese_onion, bar_width, color='b', label='Onion')
+ax[1].set_title('Japanese Curry Cutting Styles')
+ax[1].set_xticks(index + bar_width / 2)
+ax[1].set_xticklabels(categories)
+ax[1].legend()
+
+# Indian Style
+ax[2].bar(index, indian_meat, bar_width, color='r', label='Meat')
+ax[2].bar(index + bar_width, indian_onion, bar_width, color='b', label='Onion')
+ax[2].set_title('Indian Curry Cutting Styles')
+ax[2].set_xticks(index + bar_width / 2)
+ax[2].set_xticklabels(categories)
+ax[2].legend()
+
+plt.tight_layout()
+plt.show()
+~~~
+
+## 3. Collecting the Recipes of Curry
+
+~~~
+import requests
+from bs4 import BeautifulSoup
+import re
+import pandas as pd
+
+def scrape_recipe(url):
+    try:
+        response = requests.get(url)
+        if response.status_code != 200:
+            return '레시피 제목 미확인', '재료 정보 미확인', '조리 방법 정보 미확인'
+
+        soup = BeautifulSoup(response.text, 'html.parser')
+
+        # HTML 구조에 맞게 수정 필요
+        meta_tag = soup.find('meta', {'name': 'keywords'})
+        description_text = meta_tag['content'] if meta_tag else ''
+
+        title_match = re.search(r"^(.*?)[.!?]", description_text)
+        title = title_match.group(1) if title_match else '레시피 제목 미확인'
+
+        ingredients_match = re.search(r"\[재료\](.*?)(?=\n\n|\Z)", description_text, re.DOTALL)
+        ingredients = ingredients_match.group(1).strip() if ingredients_match else '재료 정보 미확인'
+        ingredients = re.sub(r"\n\s+", "\n", ingredients)
+
+        instructions_match = re.split(r"\[재료\].*?(?=\n\n|\Z)", description_text, re.DOTALL)
+        instructions = instructions_match[1].strip() if len(instructions_match) > 1 else '조리 방법 정보 미확인'
+
+        return title, ingredients, instructions
+    except Exception as e:
+        # 오류 메시지 로깅
+        print(f"URL 처리 중 오류 발생: {url}, 오류: {e}")
+        return '레시피 제목 미확인', '재료 정보 미확인', '조리 방법 정보 미확인'
+
+# 레시피 URL 목록
+urls = ['https://www.10000recipe.com/recipe/6851792#google_vignette','https://www.10000recipe.com/recipe/6844505', 
+        'https://www.10000recipe.com/recipe/6901376', 'https://www.10000recipe.com/recipe/6937042', 
+        'https://www.10000recipe.com/recipe/6694927', 'https://www.10000recipe.com/recipe/6877152', 
+        'https://www.10000recipe.com/recipe/6992309', 'https://www.10000recipe.com/recipe/6870032',
+        'https://www.10000recipe.com/recipe/6864038', 'https://www.10000recipe.com/recipe/6856796',
+        'https://www.10000recipe.com/recipe/6930392', 'https://www.10000recipe.com/recipe/6900907',
+        'https://www.10000recipe.com/recipe/6875903', 'https://www.10000recipe.com/recipe/6911692',
+        'https://www.10000recipe.com/recipe/6959177', 'https://www.10000recipe.com/recipe/6845845',
+        'https://www.10000recipe.com/recipe/6876376', 'https://www.10000recipe.com/recipe/6998838',
+        'https://www.10000recipe.com/recipe/6992967', 'https://www.10000recipe.com/recipe/6872172',
+        
+    # 다른 URL 추가...
+]
+
+# 각 URL에서 레시피 정보를 추출하고 DataFrame에 저장
+recipes = []
+for url in urls:
+    title, ingredients, instructions = scrape_recipe(url)
+    recipes.append({'제목': title, '재료': ingredients, '조리 방법': instructions})
+
+df = pd.DataFrame(recipes)
+
+# 데이터프레임을 엑셀 파일로 저장
+df.to_excel('curry_recipes.xlsx', index=False)
+
+print("엑셀 파일 저장 완료!")
+~~~
 And here is the same code yet again but with line numbers:
 
 {% highlight javascript linenos %}
