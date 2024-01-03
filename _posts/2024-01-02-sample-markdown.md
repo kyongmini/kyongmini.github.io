@@ -12,8 +12,6 @@ comments: true
 It is a '숨겨진 패턴' class of Winter Semister. I'll post the code I used to find hidden patterns.
 
 
-[This is a link to a different site](https://deanattali.com/) and [this is a link to a section inside this page](#local-urls).
-
 ## Before I look at the code,,
 
 Here's the codes. They are codes for collecting the images of curry. First, you need to install 'beautifulsoup4', 'requests', 'Pillow', 'pandas'.
@@ -23,6 +21,8 @@ Here's the codes. They are codes for collecting the images of curry. First, you 
 !pip install Pillow
 !pip install pandas
 ~~~
+
+
 
 ### 1. Extracting Images (Disabled)
 ~~~
@@ -99,6 +99,9 @@ for filename in os.listdir(folder_name):
 print("Conversion complete.")
 ~~~
 
+
+
+
 ### 2. Tables and Graphs of Curry Cutting styles by country
 
 ~~~
@@ -164,6 +167,33 @@ Here's a Korean Curry table:
 | dice | dice | [source8](https://www.10000recipe.com/recipe/6911352) |
 | dice | slice | [source9](https://www.youtube.com/watch?v=lCwcPiDE3Sk) |
 
+Here's a Japanese Curry table:
+
+| Meat Cutting Style | Onion Cutting Style | Source |
+| :------ |:--- | :--- |
+| dice | slice | [source1](https://wtable.co.kr/recipes/SeQmzbBqCYtSooGAED62wQ3h) |
+| dice | slice | [source2](https://www.10000recipe.com/recipe/6962514) |
+| dice | dice | [source3](https://www.sbfoods-worldwide.com/ko/recipes/103.html) |
+| dice | chop | [source4](https://www.sbfoods-worldwide.com/ko/recipes/066.html) |
+| dice | slice | [source5](https://www.10000recipe.com/recipe/6905411) |
+| dice | slice | [source6](https://chef-choice.tistory.com/61) |
+| dice | dice | [source7](https://www.10000recipe.com/recipe/6835633) |
+| dice | slice | [source8](https://www.10000recipe.com/recipe/6841762) |
+| dice | chop | [source9](https://www.sbfoods-worldwide.com/ko/recipes/012.html) |
+
+Finally, here's a Indian Curry table:
+
+| Meat Cutting Style | Onion Cutting Style | Source |
+| :------ |:--- | :--- |
+| dice | dice | [source1](https://www.10000recipe.com/recipe/6851792) |
+| dice | slice | [source2](https://www.10000recipe.com/recipe/6844505) |
+| dice | slice | [source3](https://wtable.co.kr/recipes/mMM45amBYXyqzg4WMLCjKCgG) |
+| dice | dice | [source4](https://www.sbfoods-worldwide.com/ko/recipes/010.html) |
+| chop | chop | [source5](https://themoonworld.com/%EA%B3%A0%EC%86%8C%ED%95%98%EA%B3%A0-%EC%A7%84%ED%95%9C-%EC%9A%B0%EC%9C%A0%EC%B9%B4%EB%A0%88-%EB%A7%8C%EB%93%A4%EA%B8%B0/#google_vignette) |
+| dice | dice | [source6](https://www.10000recipe.com/recipe/69013) |
+| chop | slice | [source7](https://www.10000recipe.com/recipe/6834483) |
+| dice | dice | [source8](https://www.10000recipe.com/recipe/6911352) |
+| dice | slice | [source9](https://www.youtube.com/watch?v=lCwcPiDE3Sk) |
 And here is the same code with syntax highlighting:
 
 ```javascript
