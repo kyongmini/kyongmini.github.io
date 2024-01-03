@@ -311,6 +311,57 @@ df.to_excel('curry_recipes.xlsx', index=False)
 
 print("엑셀 파일 저장 완료!")
 ~~~
+
+## 4. Survey
+
+We set **first preference's weight : 3 points, second preference's weight : 2 points, third preference's weight : 1 point**
+It is code for this.
+~~~
+# Parsing the provided sequences and calculating weighted sums for each number
+
+sequences = [
+    "12-1-4", "6-9-12", "1-3-5", "13-10-11", "1-9-4", "7-10-1", "1-7-5", "1-7-9", "4-9-11", "1-9-15",
+    "2-9-13", "14-1-13", "2-3-14", "1-9-12", "9-12-13", "11-7-6", "1-9-6", "9-7-1", "9-6-11", "1-6-4", "1-5-9"
+]
+
+# Dictionary to keep track of the total weighted sum for each number
+number_weights = {}
+
+for sequence in sequences:
+    numbers = [int(num) for num in sequence.split('-')]
+    
+    # Assigning weights and adding to the total for each number
+    for i, number in enumerate(numbers):
+        weight = 3 - i  # Weight: 3 for the first number, 2 for the second, 1 for the third
+        number_weights[number] = number_weights.get(number, 0) + weight
+
+number_weights_sorted = sorted(number_weights.items(), key=lambda x: x[0])
+
+number_weights_sorted
+~~~
+
+| Card Number | Total Point |
+| :------ |:--- |
+| 1 | 33 points |
+| 2 | 6 points |
+| 3 | 4 points |
+| 4 | 6 points |
+| 5 | 4 points |
+| 6 | 9 points |
+| 7 | 11 points |
+| 8 | 0 point |
+| 9 | 25 points |
+| 10 | 4 points |
+| 11 | 6 points |
+| 12 | 7 points |
+| 13 | 6 points |
+| 14 | 4 points |
+| 15 | 1 point |
+| 16 | 0 point |
+
+Then, we get the total point of each Card number.
+
+
 And here is the same code yet again but with line numbers:
 
 {% highlight javascript linenos %}
