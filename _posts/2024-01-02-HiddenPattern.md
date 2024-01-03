@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 숨겨진 패턴.
+title: 숨겨진 패턴
 subtitle: 음식 속 숨겨진 패턴 찾기!
 gh-repo: daattali/beautiful-jekyll
 tags: [test]
@@ -8,12 +8,12 @@ comments: true
 ---
 
 {: .box-success}
-It is a '숨겨진 패턴' class of Winter Semister. I'll post the code I used to find hidden patterns.
+It is a **'Hidden Pattern'** class of Winter Semister. I'll post the code I used to find hidden patterns.
 
 
 ## Before You look at the code,,
 
-Here's the codes. They are codes for collecting the images of curry. First, you need to install 'beautifulsoup4', 'requests', 'Pillow', 'pandas'.
+In order to execute the code, you need to install 'beautifulsoup4', 'requests', 'Pillow', 'pandas'.
 ~~~
 !pip install beautifulsoup4
 !pip install requests
@@ -21,9 +21,12 @@ Here's the codes. They are codes for collecting the images of curry. First, you 
 !pip install pandas
 ~~~
 
+### 1. Extracting Images
+
+{: .box-error}
+**Disabled:** As a result, we did not use this code.
 
 
-### 1. Extracting Images (Disabled)
 ~~~
 import requests
 from bs4 import BeautifulSoup
@@ -310,8 +313,6 @@ df.to_excel('curry_recipes.xlsx', index=False)
 
 print("엑셀 파일 저장 완료!")
 ~~~
-
-### Warning
 
 {: .box-warning}
 **Attention! :** The code above is a code that separates ingredients and cooking orders by spacing, so there are slight differences, so the error script was personally modified in Excel.
