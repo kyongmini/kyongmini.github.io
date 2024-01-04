@@ -386,6 +386,13 @@ plt.show()
 | Recipe13 | O | slice | [source13](https://www.10000recipe.com/recipe/6985607) |
 | Recipe14 | O | slice | [source14](https://www.10000recipe.com/recipe/6997501) |
 | Recipe15 | O | slice | [source15](https://www.10000recipe.com/recipe/6941010) |
+| Recipe16 | X | chop | [source16](https://www.sbfoods-worldwide.com/ko/recipes/010.html) |
+| Recipe17 | O | slice | [source17](https://wtable.co.kr/recipes/SeQmzbBqCYtSooGAED62wQ3h) |
+| Recipe18 | O | slice | [source18](https://eatsjapan.com/ko/recipes/how-to-make-japanese-curry/) |
+| Recipe19 | O | slice | [source19](https://www.youtube.com/watch?v=hl4OrQyjEYU&t=101s) |
+| Recipe20 | O | slice | [source20](https://www.youtube.com/watch?v=3vWCRu3xbTw) |
+
+
 
 Then, we can get the graph below.
 ~~~
@@ -394,7 +401,7 @@ import pandas as pd
 
 # Data reconstructed from the image provided by the user.
 caramelization_data = {
-    "Caramelization": ["O", "O", "X", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+    "Caramelization": ["O", "O", "X", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O","X","O", "O", "O", "O"]
 }
 
 # Convert to DataFrame
@@ -412,10 +419,16 @@ caramelization_counts.plot(kind='bar', color=['grey', 'blue'])
 plt.title('Caramelization Presence')
 plt.xlabel('Caramelization')
 plt.ylabel('Number of Recipes')
+
+# Setting y-axis ticks to integer values
+max_count = caramelization_counts.max()
+plt.yticks(range(0, max_count + 1, 1))  # Adjusting y-axis to show integer values
+
 plt.xticks(ticks=[0, 1], labels=['Absence', 'Presence'], rotation=0)
 plt.show()
 ~~~
-![image](https://github.com/kyongmini/kyongmini.github.io/assets/137682255/417bbcac-e3cd-42fe-83a5-a0ce3e36f1cc)
+![image](https://github.com/kyongmini/kyongmini.github.io/assets/137682255/6c360555-130c-401b-aad3-12ee7c9b6db4)
+
 
 **Furthermore, we can ge the correlation with curry-style(Kor,Jap) and a method of cutting onions.**
 ~~~
@@ -424,13 +437,13 @@ import numpy as np
 
 # Sample data
 korean_curry_data = {
-    'caramelized': {'slice': 10, 'not_slice': 3},
-    'not_caramelized': {'slice': 4, 'not_slice': 3}
+    'caramelized': {'slice': 2, 'not_slice': 4},
+    'not_caramelized': {'slice': 0, 'not_slice': 14}
 }
 
 japanese_curry_data = {
-    'caramelized': {'slice': 7, 'not_slice': 2},
-    'not_caramelized': {'slice': 4, 'not_slice': 2}
+    'caramelized': {'slice': 17, 'not_slice': 1},
+    'not_caramelized': {'slice': 1, 'not_slice': 1}
 }
 
 # Calculating proportions
@@ -441,7 +454,7 @@ def calculate_proportions(data, total):
     return proportions
 
 korean_proportions = calculate_proportions(korean_curry_data, 20)
-japanese_proportions = calculate_proportions(japanese_curry_data, 15)
+japanese_proportions = calculate_proportions(japanese_curry_data, 20)
 
 # Preparing data for the plot
 categories = ['Caramelized-Slice', 'Caramelized-Not Slice', 'Not Caramelized-Slice', 'Not Caramelized-Not Slice']
@@ -471,22 +484,23 @@ fig.tight_layout()
 
 plt.show()
 ~~~
-![image](https://github.com/kyongmini/kyongmini.github.io/assets/137682255/14f09b19-e61e-44ab-afeb-594cdcd6ab66)
+![image](https://github.com/kyongmini/kyongmini.github.io/assets/137682255/afea0ff4-2f7f-4ea5-8d34-9d03d7ff5304)
+
 
 {: .box-error}
 Why do we divide it into 'slice' and 'not slice(mostly dice)'?
-{: .box-note}
+
 [caramelization](https://chefd.com/how-to-caramelize-onions/) occurs best when it is slice.
 
 {: .box-error}
-Why do we use the proportions?
+Before looking at the graph, let's predict what the graph will be like!
 {: .box-note}
-The number of data samples for Korean curry and Japanese curry is different (20:15).
+The ratio of caramelized-slice and not caramelized-not slice will be larger than the others. Because the two have a correlation.
 
 {: .box-error}
 So what's the conclusion?
 {: .box-note}
-Korean curries prefer dice to slice, and Japanese curries prefer slice. And Korean curries don't often caramelize, but most Japanese curries is caramelized. This shows **the more caramelization is performed, the more method of onions is 'slice'**. Additionally, **Caramelizing plays an important role in Japanese curry, but not Korean curry.**
+Korean curries prefer dice to slice, and Japanese curries prefer slice. And Korean curries don't often caramelize, but most Japanese curries is caramelized. This shows **the correlation that the more caramelization is performed, the more method of cutting onions is 'slice'**. Additionally, **Caramelizing plays an important role in Japanese curry, but not Korean curry.**
 
 
 
