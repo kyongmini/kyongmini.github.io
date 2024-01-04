@@ -1,4 +1,4 @@
-
+---
 layout: post
 title: 숨겨진 패턴
 subtitle: 음식 속 숨겨진 패턴 찾기!
@@ -341,6 +341,19 @@ print("엑셀 파일 저장 완료!")
 | recipe19 | X | 4-2-3-5 |
 | recipe20 | X | 4-2-3-5 |
 
+"
+ 
+
+1. 양파 카라멜라이징
+2. 고기 볶기 (넣기)
+3. 물 넣기
+4. 채소 볶기 (넣기)
+5. 카레 넣기
+
+ 
+
+"
+![image](https://github.com/kyongmini/kyongmini.github.io/assets/137682255/819a564b-6061-44bc-a0b8-1aeb1b7f2437)
 
 ## 4. Survey
 
