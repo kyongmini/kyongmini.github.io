@@ -360,7 +360,8 @@ plt.tight_layout()
 plt.show()
 ~~~
 
-![image](https://github.com/kyongmini/kyongmini.github.io/assets/137682255/6c124e20-8e8b-4167-9a19-ceaad8f0d221)
+![image](https://github.com/kyongmini/kyongmini.github.io/assets/137682255/aefa36cd-029f-43ed-85da-5b97e1378bfb)
+
 
 
 {: .box-note}
