@@ -1,4 +1,4 @@
-![image](https://github.com/kyongmini/kyongmini.github.io/assets/137682255/ed9031a6-b6c3-4e57-bcd6-f074ff726c59)---
+
 layout: post
 title: 숨겨진 패턴
 subtitle: 음식 속 숨겨진 패턴 찾기!
