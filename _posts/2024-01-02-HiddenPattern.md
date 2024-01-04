@@ -360,7 +360,8 @@ plt.tight_layout()
 plt.show()
 ~~~
 
-![image](https://github.com/kyongmini/kyongmini.github.io/assets/137682255/07101242-0a6b-43d5-8edd-9dd1213fd2fc)
+![image](https://github.com/kyongmini/kyongmini.github.io/assets/137682255/6c124e20-8e8b-4167-9a19-ceaad8f0d221)
+
 
 {: .box-note}
 **Note:** Except for **process 1 (caramelization)** the recipe sequence was organized.
