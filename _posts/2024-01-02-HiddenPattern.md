@@ -324,28 +324,28 @@ print("엑셀 파일 저장 완료!")
 5. 카레 넣기
 
 
-| Korean-Style Recipe | Caramelazation | Caramelazation |
+| Korean-Style Recipe | Caramelazation | Order of Cooking |
 | :------ |:--- | :--- |
-| recipe1 | O | 12345
-| recipe2 | O | 12435
-| recipe3 | X | 2435
-| recipe4 | X | 2435
-| recipe5 | X | 2435
-| recipe6 | O | 12345
-| recipe7 | O | 12345
-| recipe8 | X | 2435
-| recipe9 | X | 2435
-| recipe10 | X | 4325
-| recipe11 | X | 2435
-| recipe12 | O | 14235
-| recipe13 | X | 4235
-| recipe14 | X | 4235
-| recipe15 | X | 2435
-| recipe16 | X | 2435
-| recipe17 | X | 2435
-| recipe18 | O | 14235
-| recipe19 | X | 4235
-| recipe20 | X | 4235
+| recipe1 | O | 1-2-3-4-5 |
+| recipe2 | O | 1-2-4-3-5 |
+| recipe3 | X | 2-4-3-5 |
+| recipe4 | X | 2-4-3-5 |
+| recipe5 | X | 2-4-3-5 |
+| recipe6 | O | 1-2-3-4-5 |
+| recipe7 | O | 1-2-3-4-5 |
+| recipe8 | X | 2-4-3-5 |
+| recipe9 | X | 2-4-3-5 |
+| recipe10 | X | 4-3-2-5 |
+| recipe11 | X | 2-4-3-5 |
+| recipe12 | O | 1-4-2-3-5 |
+| recipe13 | X | 4-2-3-5 |
+| recipe14 | X | 4-2-3-5 |
+| recipe15 | X | 2-4-3-5 |
+| recipe16 | X | 2-4-3-5 |
+| recipe17 | X | 2-4-3-5 |
+| recipe18 | O | 1-4-2-3-5 |
+| recipe19 | X | 4-2-3-5 |
+| recipe20 | X | 4-2-3-5 |
 
 
 
