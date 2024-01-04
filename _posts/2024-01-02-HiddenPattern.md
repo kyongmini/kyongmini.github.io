@@ -301,7 +301,71 @@ print("엑셀 파일 저장 완료!")
 | recipe20 | X | 4-2-3-5 |
 
 {: .box-note}
-**Note:** 1: 양파 카라멜라이징 2: 고기 볶기 (넣기) 3: 물 넣기 4: 채소 볶기 (넣기) 5: 카레 넣기
+**Note:** 1: 양파 카라멜라이징   2: 고기 볶기 (넣기)   3: 물 넣기   4: 채소 볶기 (넣기)   5: 카레 넣기
+
+Then, we can get the graph below.
+
+Here's Caramelizing presence or absence graph.
+
+~~~
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Based on the user's image, we reconstruct the data for caramelization presence.
+caramelization_data = {
+    "Caramelization": ["O", "O", "X", "X", "X", "O", "O", "X", "X", "X", "X", "O", "X", "X", "X", "X", "X", "O", "X", "X"]
+}
+
+df_caramelization = pd.DataFrame(caramelization_data)
+df_caramelization['Caramelization'] = df_caramelization['Caramelization'].apply(lambda x: 1 if x == 'O' else 0)
+
+# Count the frequency of caramelization presence
+caramelization_counts = df_caramelization['Caramelization'].value_counts().sort_index()
+
+# Plot for Caramelization Presence
+plt.figure(figsize=(7, 5))
+caramelization_counts.plot(kind='bar', color=['gray', 'blue'])
+plt.title('Caramelization Presence')
+plt.xlabel('Caramelization')
+plt.ylabel('Number of Recipes')
+plt.xticks(ticks=[0, 1], labels=['Absent', 'Present'], rotation=0)
+plt.show()
+~~~
+![image](https://github.com/kyongmini/kyongmini.github.io/assets/137682255/ba4b134d-3765-4e26-80a0-756d09d959fe)
+
+Here's the code and graph of frequency of recipe order.
+~~~
+# Reconstructing the order of cooking data after excluding '1'.
+cooking_order_data = {
+    "Order of Cooking": ["2-3-4-5", "2-3-4-5", "2-4-3-5", "2-4-3-5", "2-4-3-5",
+                         "2-3-4-5", "2-3-4-5", "2-4-3-5", "2-4-3-5", "4-3-2-5",
+                         "2-4-3-5", "2-3-4-5", "4-2-3-5", "4-2-3-5", "2-4-3-5",
+                         "2-4-3-5", "2-4-3-5", "2-3-4-5", "4-2-3-5", "4-2-3-5"]
+}
+
+# Convert to DataFrame
+df_cooking_order = pd.DataFrame(cooking_order_data)
+
+# Count the frequency of each cooking order combination
+cooking_order_counts = df_cooking_order['Order of Cooking'].value_counts()
+
+# Plot for Cooking Order Frequencies
+plt.figure(figsize=(10, 6))
+cooking_order_counts.plot(kind='bar', color='navy')
+plt.title('Frequency of Cooking Order Combinations (without step 1)')
+plt.xlabel('Cooking Order Combination')
+plt.ylabel('Frequency')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()
+~~~
+
+![image](https://github.com/kyongmini/kyongmini.github.io/assets/137682255/62b22dd7-e197-47a4-8afa-6a1a10ccbfb6)
+
+{: .box-note}
+**Note:** Except for **process 1 (caramelization)** the recipe sequence was organized.
+
+![image](https://github.com/kyongmini/kyongmini.github.io/assets/137682255/07101242-0a6b-43d5-8edd-9dd1213fd2fc)
 
  
 ## 4. Survey
@@ -509,6 +573,8 @@ plt.show()
 
 Then, we can get graph below.
 ![image](https://github.com/kyongmini/kyongmini.github.io/assets/137682255/7b2fc507-4806-4a15-bda4-499debd7e108)
+
+
 
 
 
