@@ -277,28 +277,28 @@ print("엑셀 파일 저장 완료!")
 **Attention! :** The code above is a code that separates ingredients and cooking orders by spacing, so there are slight differences, so the error script was personally modified in Excel.
 
 
-| Korean-Style Recipe | Caramelazation | Order of Cooking |
-| :------ |:--- | :--- |
-| recipe1 | O | 1-2-3-4-5 |
-| recipe2 | O | 1-2-4-3-5 |
-| recipe3 | X | 2-4-3-5 |
-| recipe4 | X | 2-4-3-5 |
-| recipe5 | X | 2-4-3-5 |
-| recipe6 | O | 1-2-3-4-5 |
-| recipe7 | O | 1-2-3-4-5 |
-| recipe8 | X | 2-4-3-5 |
-| recipe9 | X | 2-4-3-5 |
-| recipe10 | X | 4-3-2-5 |
-| recipe11 | X | 2-4-3-5 |
-| recipe12 | O | 1-4-2-3-5 |
-| recipe13 | X | 4-2-3-5 |
-| recipe14 | X | 4-2-3-5 |
-| recipe15 | X | 2-4-3-5 |
-| recipe16 | X | 2-4-3-5 |
-| recipe17 | X | 2-4-3-5 |
-| recipe18 | O | 1-4-2-3-5 |
-| recipe19 | X | 4-2-3-5 |
-| recipe20 | X | 4-2-3-5 |
+| Korean-Style Recipe | Caramelazation | Order of Cooking | Method of Cutting Onions | 
+| :------ |:--- | :--- | :--- |
+| recipe1 | O | 1-2-3-4-5 | dice |
+| recipe2 | O | 1-2-4-3-5 | slice |
+| recipe3 | X | 2-4-3-5 | dice |
+| recipe4 | X | 2-4-3-5 | dice |
+| recipe5 | X | 2-4-3-5 | dice |
+| recipe6 | O | 1-2-3-4-5 | slice |
+| recipe7 | O | 1-2-3-4-5 | chop |
+| recipe8 | X | 2-4-3-5 | dice |
+| recipe9 | X | 2-4-3-5 | dice |
+| recipe10 | X | 4-3-2-5 | dice |
+| recipe11 | X | 2-4-3-5 | dice |
+| recipe12 | O | 1-4-2-3-5 | dice |
+| recipe13 | X | 4-2-3-5 | dice |
+| recipe14 | X | 4-2-3-5 | dice |
+| recipe15 | X | 2-4-3-5 | dice |
+| recipe16 | X | 2-4-3-5 | dice |
+| recipe17 | X | 2-4-3-5 | dice |
+| recipe18 | O | 1-4-2-3-5 | dice |
+| recipe19 | X | 4-2-3-5 | dice |
+| recipe20 | X | 4-2-3-5 | dice |
 
 {: .box-note}
 **Note:** 1: 양파 카라멜라이징   2: 고기 볶기 (넣기)   3: 물 넣기   4: 채소 볶기 (넣기)   5: 카레 넣기
@@ -369,23 +369,23 @@ plt.show()
 
 **For comparing Korean-style with Japanese-style curry, additionally, we find the caramelizatoin presence of japanese-style curry.**
 
-| Japanese-style | Caramelization | Source |
-| :------ |:--- | :--- |
-| Recipe1 | O | [source1](https://www.10000recipe.com/recipe/6905411) |
-| Recipe2 | O | [source2](https://www.10000recipe.com/recipe/6896480) |
-| Recipe3 | X | [source3](https://www.10000recipe.com/recipe/1765070) |
-| Recipe4 | O | [source4](https://www.10000recipe.com/recipe/6835633) |
-| Recipe5 | O | [source5](https://www.10000recipe.com/recipe/6902320) |
-| Recipe6 | O | [source6](https://www.10000recipe.com/recipe/6937516) |
-| Recipe7 | O | [source7](https://www.10000recipe.com/recipe/6962514) |
-| Recipe8 | O | [source8](https://www.10000recipe.com/recipe/6837478) |
-| Recipe9 | O | [source9](https://www.10000recipe.com/recipe/5100064) |
-| Recipe10 | O | [source10](https://www.10000recipe.com/recipe/7002939) |
-| Recipe11 | O | [source11](https://www.10000recipe.com/recipe/6943061) |
-| Recipe12 | O | [source12](https://www.10000recipe.com/recipe/6962514) |
-| Recipe13 | O | [source13](https://www.10000recipe.com/recipe/6985607) |
-| Recipe14 | O | [source14](https://www.10000recipe.com/recipe/6997501) |
-| Recipe15 | O | [source15](https://www.10000recipe.com/recipe/6941010) |
+| Japanese-style | Caramelization | Method of Cutting Onions | Source |
+| :------ |:--- |:--- | :--- |
+| Recipe1 | O | slice | [source1](https://www.10000recipe.com/recipe/6905411) |
+| Recipe2 | O | slice | [source2](https://www.10000recipe.com/recipe/6896480) |
+| Recipe3 | X | slice | [source3](https://www.10000recipe.com/recipe/1765070) |
+| Recipe4 | O | dice | [source4](https://www.10000recipe.com/recipe/6835633) |
+| Recipe5 | O | slice | [source5](https://www.10000recipe.com/recipe/6902320) |
+| Recipe6 | O | slice | [source6](https://www.10000recipe.com/recipe/6937516) |
+| Recipe7 | O | slice | [source7](https://www.10000recipe.com/recipe/6962514) |
+| Recipe8 | O | slice | [source8](https://www.10000recipe.com/recipe/6837478) |
+| Recipe9 | O | slice | [source9](https://www.10000recipe.com/recipe/5100064) |
+| Recipe10 | O | slice | [source10](https://www.10000recipe.com/recipe/7002939) |
+| Recipe11 | O | slice | [source11](https://www.10000recipe.com/recipe/6943061) |
+| Recipe12 | O | slice | [source12](https://www.10000recipe.com/recipe/6962514) |
+| Recipe13 | O | slice | [source13](https://www.10000recipe.com/recipe/6985607) |
+| Recipe14 | O | slice | [source14](https://www.10000recipe.com/recipe/6997501) |
+| Recipe15 | O | slice | [source15](https://www.10000recipe.com/recipe/6941010) |
 
 Then, we can get the graph below.
 ~~~
@@ -416,6 +416,8 @@ plt.xticks(ticks=[0, 1], labels=['Absence', 'Presence'], rotation=0)
 plt.show()
 ~~~
 ![image](https://github.com/kyongmini/kyongmini.github.io/assets/137682255/417bbcac-e3cd-42fe-83a5-a0ce3e36f1cc)
+
+**Furthermore, we can ge the correlation with curry-style(Kor,Jap) and a method of cutting onions.**
 
 
 
