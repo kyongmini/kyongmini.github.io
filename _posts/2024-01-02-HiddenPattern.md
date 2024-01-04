@@ -341,20 +341,14 @@ print("엑셀 파일 저장 완료!")
 | recipe19 | X | 4-2-3-5 |
 | recipe20 | X | 4-2-3-5 |
 
-"
- 
-
-1. 양파 카라멜라이징
+{: .box-note}
+**Note:** 1. 양파 카라멜라이징
 2. 고기 볶기 (넣기)
 3. 물 넣기
 4. 채소 볶기 (넣기)
 5. 카레 넣기
 
  
-
-"
-![image](https://github.com/kyongmini/kyongmini.github.io/assets/137682255/819a564b-6061-44bc-a0b8-1aeb1b7f2437)
-
 ## 4. Survey
 
 We set **first preference's weight : 3 points, second preference's weight : 2 points, third preference's weight : 1 point**
