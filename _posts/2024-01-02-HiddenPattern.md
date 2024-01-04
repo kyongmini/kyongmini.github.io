@@ -386,6 +386,38 @@ plt.show()
 | Recipe14 | O | [source14](https://www.10000recipe.com/recipe/6997501) |
 | Recipe15 | O | [source15](https://www.10000recipe.com/recipe/6941010) |
 
+Then, we can get the graph below.
+~~~
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# Data reconstructed from the image provided by the user.
+caramelization_data = {
+    "Caramelization": ["O", "O", "X", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+}
+
+# Convert to DataFrame
+df_caramelization = pd.DataFrame(caramelization_data)
+
+# Map 'O' to 1 (presence) and 'X' to 0 (absence)
+df_caramelization['Caramelization'] = df_caramelization['Caramelization'].map({'O': 1, 'X': 0})
+
+# Count the occurrences of each
+caramelization_counts = df_caramelization['Caramelization'].value_counts().sort_index()
+
+# Create a bar plot with the specified colors
+plt.figure(figsize=(7, 5))
+caramelization_counts.plot(kind='bar', color=['grey', 'blue'])
+plt.title('Caramelization Presence')
+plt.xlabel('Caramelization')
+plt.ylabel('Number of Recipes')
+plt.xticks(ticks=[0, 1], labels=['Absence', 'Presence'], rotation=0)
+plt.show()
+~~~
+![image](https://github.com/kyongmini/kyongmini.github.io/assets/137682255/417bbcac-e3cd-42fe-83a5-a0ce3e36f1cc)
+
+
+
 ## 4. Survey
 
 We set **first preference's weight : 3 points, second preference's weight : 2 points, third preference's weight : 1 point**
