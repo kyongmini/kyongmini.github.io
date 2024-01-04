@@ -317,12 +317,6 @@ print("엑셀 파일 저장 완료!")
 {: .box-warning}
 **Attention! :** The code above is a code that separates ingredients and cooking orders by spacing, so there are slight differences, so the error script was personally modified in Excel.
 
-1. 양파 카라멜라이징
-2. 고기 볶기 (넣기)
-3. 물 넣기
-4. 채소 볶기 (넣기)
-5. 카레 넣기
-
 
 | Korean-Style Recipe | Caramelazation | Order of Cooking |
 | :------ |:--- | :--- |
@@ -347,7 +341,12 @@ print("엑셀 파일 저장 완료!")
 | recipe19 | X | 4-2-3-5 |
 | recipe20 | X | 4-2-3-5 |
 
-
+{: .box-note}
+**Note:** 1. 양파 카라멜라이징
+2. 고기 볶기 (넣기)
+3. 물 넣기
+4. 채소 볶기 (넣기)
+5. 카레 넣기
 
 ## 4. Survey
 
