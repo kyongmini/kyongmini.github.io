@@ -418,6 +418,75 @@ plt.show()
 ![image](https://github.com/kyongmini/kyongmini.github.io/assets/137682255/417bbcac-e3cd-42fe-83a5-a0ce3e36f1cc)
 
 **Furthermore, we can ge the correlation with curry-style(Kor,Jap) and a method of cutting onions.**
+~~~
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Sample data
+korean_curry_data = {
+    'caramelized': {'slice': 10, 'not_slice': 3},
+    'not_caramelized': {'slice': 4, 'not_slice': 3}
+}
+
+japanese_curry_data = {
+    'caramelized': {'slice': 7, 'not_slice': 2},
+    'not_caramelized': {'slice': 4, 'not_slice': 2}
+}
+
+# Calculating proportions
+def calculate_proportions(data, total):
+    proportions = {}
+    for key in data:
+        proportions[key] = {k: v / total for k, v in data[key].items()}
+    return proportions
+
+korean_proportions = calculate_proportions(korean_curry_data, 20)
+japanese_proportions = calculate_proportions(japanese_curry_data, 15)
+
+# Preparing data for the plot
+categories = ['Caramelized-Slice', 'Caramelized-Not Slice', 'Not Caramelized-Slice', 'Not Caramelized-Not Slice']
+korean_values = [korean_proportions['caramelized']['slice'], korean_proportions['caramelized']['not_slice'], 
+                 korean_proportions['not_caramelized']['slice'], korean_proportions['not_caramelized']['not_slice']]
+japanese_values = [japanese_proportions['caramelized']['slice'], japanese_proportions['caramelized']['not_slice'], 
+                   japanese_proportions['not_caramelized']['slice'], japanese_proportions['not_caramelized']['not_slice']]
+
+x = np.arange(len(categories))  # the label locations
+width = 0.35  # the width of the bars
+
+fig, ax = plt.subplots()
+rects1 = ax.bar(x - width/2, korean_values, width, label='Korean Curry')
+rects2 = ax.bar(x + width/2, japanese_values, width, label='Japanese Curry')
+
+# Add some text for labels, title and custom x-axis tick labels, etc.
+ax.set_ylabel('Proportions')
+ax.set_title('Proportions of Caramelization and Onion Cutting Style in Curry Recipes')
+ax.set_xticks(x)
+ax.set_xticklabels(categories)
+ax.legend()
+
+ax.bar_label(rects1, padding=3)
+ax.bar_label(rects2, padding=3)
+
+fig.tight_layout()
+
+plt.show()
+~~~
+![image](https://github.com/kyongmini/kyongmini.github.io/assets/137682255/14f09b19-e61e-44ab-afeb-594cdcd6ab66)
+
+{: .box-error}
+Why do we divide it into 'slice' and 'not slice(mostly dice)'?
+{: .box-note}
+[caramelization](https://chefd.com/how-to-caramelize-onions/) occurs best when it is slice.
+
+{: .box-error}
+Why do we use the proportions?
+{: .box-note}
+The number of data samples for Korean curry and Japanese curry is different (20:15).
+
+{: .box-error}
+So what's the conclusion?
+{: .box-note}
+Korean curries prefer dice to slice, and Japanese curries prefer slice. And Korean curries don't often caramelize, but most Japanese curries is caramelized. This shows the correlation that the more caramelization is performed, the more onions are cut into slice.
 
 
 
