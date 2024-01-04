@@ -72,7 +72,7 @@ for image in images:
 
 print(f'All images have been downloaded and saved in {folder_name}/')
 ~~~
-if it is successfully downloaded, it will output the **All images have been downloaded and saved in 'your folder name'**
+If it is successfully downloaded, it will output the **All images have been downloaded and saved in 'your folder name'**.
 
 Finally, you converted the files into the images! 
 ~~~
@@ -305,7 +305,7 @@ print("엑셀 파일 저장 완료!")
 
 Then, we can get the graph below.
 
-Here's Caramelizing presence or absence graph.
+Here's Caramelizing presence or absence graph (Korean-style).
 
 ~~~
 import pandas as pd
@@ -333,7 +333,7 @@ plt.show()
 ~~~
 ![image](https://github.com/kyongmini/kyongmini.github.io/assets/137682255/ba4b134d-3765-4e26-80a0-756d09d959fe)
 
-Here's the code and graph of frequency of recipe order.
+Here's the code and graph of frequency of recipe order(Korean-Style).
 ~~~
 # Reconstructing the order of cooking data after excluding '1'.
 cooking_order_data = {
@@ -365,7 +365,27 @@ plt.show()
 
 {: .box-note}
 **Note:** Except for **process 1 (caramelization)** the recipe sequence was organized.
- 
+
+**For comparing Korean-style with Japanese-style curry, additionally, we find the caramelizatoin presence of japanese-style curry.**
+
+| Japanese-style | Caramelization | Source |
+| :------ |:--- | :--- |
+| Recipe1 | O | [source1](https://www.10000recipe.com/recipe/6905411) |
+| Recipe2 | O | [source2](https://www.10000recipe.com/recipe/6896480) |
+| Recipe3 | X | [source3](https://www.10000recipe.com/recipe/1765070) |
+| Recipe4 | O | [source4](https://www.10000recipe.com/recipe/6835633) |
+| Recipe5 | O | [source5](https://www.10000recipe.com/recipe/6902320) |
+| Recipe6 | O | [source6](https://www.10000recipe.com/recipe/6937516) |
+| Recipe7 | O | [source7](https://www.10000recipe.com/recipe/6962514) |
+| Recipe8 | O | [source8](https://www.10000recipe.com/recipe/6837478) |
+| Recipe9 | O | [source9](https://www.10000recipe.com/recipe/5100064) |
+| Recipe10 | O | [source10](https://www.10000recipe.com/recipe/7002939) |
+| Recipe11 | O | [source11](https://www.10000recipe.com/recipe/6943061) |
+| Recipe12 | O | [source12](https://www.10000recipe.com/recipe/6962514) |
+| Recipe13 | O | [source13](https://www.10000recipe.com/recipe/6985607) |
+| Recipe14 | O | [source14](https://www.10000recipe.com/recipe/6997501) |
+| Recipe15 | O | [source15](https://www.10000recipe.com/recipe/6941010) |
+
 ## 4. Survey
 
 We set **first preference's weight : 3 points, second preference's weight : 2 points, third preference's weight : 1 point**
