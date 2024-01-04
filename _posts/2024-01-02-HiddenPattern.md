@@ -106,54 +106,6 @@ print("Conversion complete.")
 
 ### 2. Tables and Graphs of Curry Cutting styles by country
 
-~~~
-import matplotlib.pyplot as plt
-import numpy as np
-
-# Data for the graph
-categories = ['dice', 'chop', 'slice', 'mince']
-korean_meat = [7, 2, 0, 0]  # Korean style meat cutting
-korean_onion = [4, 1, 4, 0]  # Korean style onion cutting
-japanese_meat = [9, 0, 0, 0]  # Japanese style meat cutting
-japanese_onion = [2, 1, 5, 0]  # Japanese style onion cutting
-indian_meat = [9, 0, 0, 0]  # Indian style meat cutting
-indian_onion = [4, 2, 1, 2]  # Indian style onion cutting
-
-# X locations for the groups
-bar_width = 0.35
-index = np.arange(len(categories))
-
-# Plotting the graph
-fig, ax = plt.subplots(3, 1, figsize=(10, 15))
-
-# Korean Style
-ax[0].bar(index, korean_meat, bar_width, color='r', label='Meat')
-ax[0].bar(index + bar_width, korean_onion, bar_width, color='b', label='Onion')
-ax[0].set_title('Korean Curry Cutting Styles')
-ax[0].set_xticks(index + bar_width / 2)
-ax[0].set_xticklabels(categories)
-ax[0].legend()
-
-# Japanese Style
-ax[1].bar(index, japanese_meat, bar_width, color='r', label='Meat')
-ax[1].bar(index + bar_width, japanese_onion, bar_width, color='b', label='Onion')
-ax[1].set_title('Japanese Curry Cutting Styles')
-ax[1].set_xticks(index + bar_width / 2)
-ax[1].set_xticklabels(categories)
-ax[1].legend()
-
-# Indian Style
-ax[2].bar(index, indian_meat, bar_width, color='r', label='Meat')
-ax[2].bar(index + bar_width, indian_onion, bar_width, color='b', label='Onion')
-ax[2].set_title('Indian Curry Cutting Styles')
-ax[2].set_xticks(index + bar_width / 2)
-ax[2].set_xticklabels(categories)
-ax[2].legend()
-
-plt.tight_layout()
-plt.show()
-~~~
-
 
 Here's a Korean Curry table:
 
@@ -248,6 +200,13 @@ ax[2].legend()
 plt.tight_layout()
 plt.show()
 ~~~
+
+Then, we can get the graphs below.
+![image](https://github.com/kyongmini/kyongmini.github.io/assets/137682255/ecea23ac-9e49-4128-b772-1dae8ce4e79b)
+![image](https://github.com/kyongmini/kyongmini.github.io/assets/137682255/bba63160-606d-4f2c-b22f-b4b099ac7b94)
+![image](https://github.com/kyongmini/kyongmini.github.io/assets/137682255/b8981941-021c-433b-a930-4cb0a831c7c1)
+
+
 
 ## 3. Collecting the Recipes of Curry
 
@@ -373,6 +332,7 @@ number_weights_sorted = sorted(number_weights.items(), key=lambda x: x[0])
 number_weights_sorted
 ~~~
 
+
 | Card Number | Total Point |
 | :------ |:--- |
 | 1 | 33 points |
@@ -451,6 +411,9 @@ for card, items in menu_items.items():
 
 total_scores
 ~~~
+Then, we can get the graph below.
+![image](https://github.com/kyongmini/kyongmini.github.io/assets/137682255/841dc444-954f-4aa8-8991-bf483f9d4362)
+
 
 **Main Ingredient Total Points**
 
@@ -545,6 +508,7 @@ plt.show()
 ~~~
 
 Then, we can get graph below.
+![image](https://github.com/kyongmini/kyongmini.github.io/assets/137682255/7b2fc507-4806-4a15-bda4-499debd7e108)
 
 
 
