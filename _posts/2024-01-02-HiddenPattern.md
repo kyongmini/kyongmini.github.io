@@ -486,7 +486,7 @@ The number of data samples for Korean curry and Japanese curry is different (20:
 {: .box-error}
 So what's the conclusion?
 {: .box-note}
-Korean curries prefer dice to slice, and Japanese curries prefer slice. And Korean curries don't often caramelize, but most Japanese curries is caramelized. This shows **the correlation that the more caramelization is performed, the more onions are cut into slice**.
+Korean curries prefer dice to slice, and Japanese curries prefer slice. And Korean curries don't often caramelize, but most Japanese curries is caramelized. This shows **the more caramelization is performed, the more method of onions is 'slice'**. Additionally, **Caramelizing plays an important role in Japanese curry, but not Korean curry.**
 
 
 
