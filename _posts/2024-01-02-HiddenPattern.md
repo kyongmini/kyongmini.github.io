@@ -1,4 +1,4 @@
----
+![image](https://github.com/kyongmini/kyongmini.github.io/assets/137682255/ed9031a6-b6c3-4e57-bcd6-f074ff726c59)---
 layout: post
 title: 숨겨진 패턴
 subtitle: 음식 속 숨겨진 패턴 찾기!
@@ -316,6 +316,36 @@ print("엑셀 파일 저장 완료!")
 
 {: .box-warning}
 **Attention! :** The code above is a code that separates ingredients and cooking orders by spacing, so there are slight differences, so the error script was personally modified in Excel.
+
+1. 양파 카라멜라이징
+2. 고기 볶기 (넣기)
+3. 물 넣기
+4. 채소 볶기 (넣기)
+5. 카레 넣기
+
+
+| Korean-Style Recipe | Caramelazation | Caramelazation |
+| :------ |:--- | :--- |
+| recipe1 | O | 12345
+| recipe2 | O | 12435
+| recipe3 | X | 2435
+| recipe4 | X | 2435
+| recipe5 | X | 2435
+| recipe6 | O | 12345
+| recipe7 | O | 12345
+| recipe8 | X | 2435
+| recipe9 | X | 2435
+| recipe10 | X | 4325
+| recipe11 | X | 2435
+| recipe12 | O | 14235
+| recipe13 | X | 4235
+| recipe14 | X | 4235
+| recipe15 | X | 2435
+| recipe16 | X | 2435
+| recipe17 | X | 2435
+| recipe18 | O | 14235
+| recipe19 | X | 4235
+| recipe20 | X | 4235
 
 
 
