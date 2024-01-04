@@ -3,7 +3,7 @@ layout: post
 title: 숨겨진 패턴
 subtitle: 음식 속 숨겨진 패턴 찾기!
 gh-repo: daattali/beautiful-jekyll
-tags: [test]
+tags: [hiddenpattern, curry]
 comments: true
 ---
 
