@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 숨겨진 패턴
-subtitle: 음식 속 숨겨진 패턴 찾기!
+subtitle: 식품공학 및 소비자심리를 패턴화하여 최적의 카레 조리법 만들기
 gh-repo: daattali/beautiful-jekyll
 tags: [hiddenpattern, curry]
 comments: true
