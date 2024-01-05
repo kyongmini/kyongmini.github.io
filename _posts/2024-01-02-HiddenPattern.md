@@ -707,7 +707,7 @@ plt.tight_layout()
 plt.show()
 ~~~
 
-Then, we can get graph below.
+Then, we can get the graph below.
 ![image](https://github.com/kyongmini/kyongmini.github.io/assets/137682255/7b2fc507-4806-4a15-bda4-499debd7e108)
 
 
