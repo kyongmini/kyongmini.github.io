@@ -367,6 +367,32 @@ plt.show()
 {: .box-note}
 **Note:** Except for **process 1 (caramelization)** the recipe sequence was organized.
 
+And we can think what ingredients are in it.
+
+| Korean-Style Recipe | Ingredient | 
+| :------ |:--- |
+| recipe1 | 돼지고기, 감자, 당근, 양파, 새송이버섯, 우유, 버터, 후추, 마늘 |
+| recipe2 | 돼지고기, 양파, 감자, 당근 |
+| recipe3 | 돼지고기, 감자, 양파, 당근, 다진마늘 |
+| recipe4 | 돼지고기, 양파, 감자, 당근, 후추 |
+| recipe5 | 양파, 애호박, 당근, 감자, 돼지고기 |
+| recipe6 | 감자, 양파, 돼지고기, 후추 |
+| recipe7 | 양파, 후추, 소고기, 당근, 감자 |
+| recipe8 | 돼지고기, 양파, 파프리카, 새송이버섯, 감자, 마늘, 후추 |
+| recipe9 | 쇠고기, 감자, 당근, 호박, 양파, 버터, 후추, 다진마늘 |
+| recipe10 | 닭가슴살, 양파, 감자, 애호박 |
+| recipe11 |양파, 당근, 감자, 양배추, 돼지고기, 파프리카, 단호박 |
+| recipe12 | 감자, 양파, 호박, 파프리카, 버섯, 쇠고기 |
+| recipe13 | 당근, 감자, 양파, 햄, 계란후라이 |
+| recipe14 | 돼지고기, 양파, 당근, 감자, 다진마늘, 후추 |
+| recipe15 | 돼지고기, 당근, 애호박, 양파, 감자 |
+| recipe16 | 돼지고기, 버터, 당근, 감자, 양파, 사과 |
+| recipe17 | 감자, 당근, 양송이버섯, 브로콜리, 돼지고기 |
+| recipe18 | 양파, 감자, 당근, 돼지고기 |
+| recipe19 | 감자, 당근, 양파, 돼지고기, 버터 |
+| recipe20 | 닭 가슴살, 파프리카, 양파, 후추 |
+
+
 **For comparing Korean-style with Japanese-style curry, additionally, we find the caramelizatoin presence of japanese-style curry.**
 
 | Japanese-style | Caramelization | Method of Cutting Onions | Source |
