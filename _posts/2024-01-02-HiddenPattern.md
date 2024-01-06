@@ -393,6 +393,12 @@ And we can think what ingredients are in it.
 | recipe20 | 닭 가슴살, 파프리카, 양파, 후추 |
 
 
+![image](https://github.com/kyongmini/kyongmini.github.io/assets/137682255/4833d757-79f0-4c78-b401-305a8d4d06e9)
+
+![image](https://github.com/kyongmini/kyongmini.github.io/assets/137682255/64c1fe64-27bc-4dbe-8687-41e75e47244b)
+
+
+
 **For comparing Korean-style with Japanese-style curry, additionally, we find the caramelizatoin presence of japanese-style curry.**
 
 | Japanese-style | Caramelization | Method of Cutting Onions | Source |
