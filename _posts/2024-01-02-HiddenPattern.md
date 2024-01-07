@@ -743,7 +743,14 @@ Then, we can get the graph below.
 ![image](https://github.com/kyongmini/kyongmini.github.io/assets/137682255/7b2fc507-4806-4a15-bda4-499debd7e108)
 
 
+## 5. Final Recipe
 
+### Curries for Uganda Export
+
+~~~
+
+~~~
+![image](https://github.com/kyongmini/kyongmini.github.io/assets/137682255/b220c127-196c-44fa-b130-fb383fa48492)
 
 
 ### Notification
