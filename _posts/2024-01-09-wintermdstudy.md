@@ -26,6 +26,7 @@ Since this study is non-face-to-face, it will be conducted through submission of
 We're going to write one every week.
 
 [StudyReport.pdf](https://github.com/kyongmini/kyongmini.github.io/files/13865253/default.pdf)
+
 [StudyReport.docx](https://github.com/kyongmini/kyongmini.github.io/files/13865251/default.docx)
 
 ## Study Plan
