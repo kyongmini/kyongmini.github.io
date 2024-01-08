@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 숨겨진 패턴
-subtitle: 식품공학 및 소비자심리를 패턴화하여 최적의 카레 조리법 만들기
+title: Machine Learning & Deep Learning Study in Winter Vacation, 2024
+subtitle: Deep Learning Basic Theory 2
 gh-repo: daattali/beautiful-jekyll
-tags: [hiddenpattern, curry]
+tags: [deep learning]
 comments: true
 ---
 
