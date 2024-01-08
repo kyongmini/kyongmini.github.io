@@ -33,5 +33,6 @@ We're going to write one every week.
 Study Plan is as follows.
 
 ![2024WinterStudyPlan](https://github.com/kyongmini/kyongmini.github.io/assets/137682255/39270bb7-b62b-4bff-a7f5-55a9a4a9ccb0)
+
 [2024WinterStudyPlan.pdf](https://github.com/kyongmini/kyongmini.github.io/files/13865264/default.pdf)
 
