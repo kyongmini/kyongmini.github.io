@@ -10,7 +10,7 @@ comments: true
 This semester, we study the basic concepts and practices of deep learning through the following sites.
 
 {: .box-note}
-[Website](https://www.udacity.com/course/intro-to-tensorflow-for-deep-learning--ud187) The lecture site we studied this semester
+[Website](https://www.udacity.com/course/intro-to-tensorflow-for-deep-learning--ud187) The lecture site we study this semester.
 
 The study method is conducted in the form of a rotating presentation among study members.
 
