@@ -7,6 +7,8 @@ tags: [deeplearning]
 comments: true
 ---
 
+## Overall 
+
 This semester, we study the basic concepts and practices of deep learning through the following sites.
 
 {: .box-note}
@@ -22,5 +24,7 @@ The study method is conducted in the form of a rotating presentation among study
 | 2023.11.16 | 오정환&최경호 | Going Further With CNNs |
 | 2023.11.23 | 나영서&박태호 | Transfer Learning |
 
+
+## Works
 
 [2023Fall_MDStudy.zip](https://github.com/kyongmini/kyongmini.github.io/files/13863824/2023Fall_MDStudy.zip)
