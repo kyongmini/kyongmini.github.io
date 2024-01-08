@@ -63,7 +63,7 @@ social-network-links:
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
-#  instagram: deanat78
+  instagram: kyongmini
 #  telephone: +14159998888
 #  steam: deanat78
 #  twitch: yourname
@@ -76,7 +76,7 @@ social-network-links:
 #  discord: "invite_code" or "users/userid" or "invite/invite_code" 
 #  kaggle: yourname
 #  hackerrank: yourname
-  gitlab: kyongmini
+#  gitlab: kyongmini
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
