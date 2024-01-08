@@ -7,6 +7,11 @@ tags: [deep learning]
 comments: true
 ---
 
+This semester, we'll study the basic concepts and practices of deep learning through the following sites.
+
+
+And additionally, we'll study the basic concepts of machine learning.
+
 {: .box-success}
 It is a **'Hidden Pattern'** class of Winter Semister. I'll post the code I used to find hidden patterns.
 
