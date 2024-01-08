@@ -12,7 +12,7 @@ tags: [machine learning, deep learning]
 
 ## Fall, 2023 
 
-[post]()
+[post](https://kyongmini.github.io//2024-01-08-fallmdstudy/)
 
 ## Winter, 2024
 
