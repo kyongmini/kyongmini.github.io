@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: base
 permalink: /mdstudy/
 title: Documents of Machine Learning & Deep Learning Study
 subtitle: MARO in Kyunghee University
