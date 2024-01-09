@@ -17,4 +17,4 @@ tags: [machine learning, deep learning]
 
 ## Winter, 2024
 
-[post]()
+[post](https://kyongmini.github.io//2024-01-09-wintermdstudy/)
