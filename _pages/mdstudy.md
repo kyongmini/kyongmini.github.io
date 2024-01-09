@@ -9,7 +9,7 @@ share-img: /assets/img/path.jpg
 tags: [machine learning, deep learning]
 ---
 {: .box-note}
-**This post is our study record from fall 2023.**
+**This post records our study history from fall 2023.**
 
 ## Fall, 2023 
 
