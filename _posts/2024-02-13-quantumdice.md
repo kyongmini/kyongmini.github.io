@@ -1,4 +1,4 @@
-![image](https://github.com/kyongmini/kyongmini.github.io/assets/137682255/b044d3b3-9edd-4c1a-99c1-d56a35a020f6)---
+---
 layout: post
 title: Quantum Dice
 subtitle: My Quantum Computing Project 1
