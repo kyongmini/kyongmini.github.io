@@ -3,7 +3,7 @@ layout: post
 title: Inverse Design in Photonics
 subtitle: through the Adjoint Method
 gh-repo: daattali/beautiful-jekyll
-tags: [hiddenpattern, curry]
+tags: [photonics]
 comments: true
 ---
 
