@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Machine Learning & Deep Learning Study in Fall Semister, 2023
+title: Machine Learning & Deep Learning Study in Fall Semester, 2023
 subtitle: Deep Learning Basic Theory 1
 gh-repo: daattali/beautiful-jekyll
 tags: [deep learning]
