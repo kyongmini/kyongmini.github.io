@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: My Website
+title: kyongmini
 
 # Your name to show in the footer
 author: kyongmini
@@ -24,6 +24,7 @@ navbar-links:
   Resources:
     - Machine Learning/Deep Learning study: "https://kyongmini.github.io/2023-09-03-mdstudy/"
     - Optics: "https:machinelearning.github.io/"
+    - Quantuminformation : "https:machinelearning.github.io/"
   Author's home: "https:machinelearning.github.io/"
 
 ################
