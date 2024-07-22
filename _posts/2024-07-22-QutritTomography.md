@@ -8,7 +8,7 @@ comments: true
 ---
 
 {: .box-success}
-It is about how to construct directly **'Qutrit tomography'**. Here's my code below.
+It is about how to construct directly **Qutrit tomography**. Here's my code below.
 
 
 ## Before running this code, import them.
