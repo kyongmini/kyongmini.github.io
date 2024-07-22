@@ -11,7 +11,7 @@ comments: true
 It is about how to construct directly **Qutrit tomography**. Here's my code below.
 
 
-## Before running this code, import them.
+### Before running this code, import them.
 
 In order to execute the code, you need to import as belows.
 ~~~
@@ -24,7 +24,7 @@ from scipy.linalg import sqrtm
 
 
 
-## 1. Input the test state(theoretical state) and make density matrix of test state for comparing with reconstructed density matrix, later.
+### 1. Input the test state(theoretical state) and make density matrix of test state for comparing with reconstructed density matrix, later.
 
 You can convert the values(alpha, beta, gamma) freely. a+bj means a is real part and b is imaginary part.
 
@@ -46,7 +46,7 @@ If you input the test state, we can get the theoretical density matrix by tensor
 
 
 
-## 2. Define the basis for single Qutrit.
+### 2. Define the basis for single Qutrit.
 
 
 You can select the basis freely. One thing to keep in mind is, to construct basis more easier, you should choose polarization of two photon(HH~LL).
@@ -83,7 +83,7 @@ measurement_op = [measurement(psi) for psi in basis]
 
 
 
-## 4. Find the probability. (It means that we should find nomalized coincidence count)
+### 4. Find the probability. (It means that we should find nomalized coincidence count)
 
 Keep in mind the normalized count, HH+HV+VV is always 1. Because we construct with HH, HV, VV data in single qutrit.
 ~~~
@@ -94,7 +94,7 @@ print(n)
 Here's the table of my test state.
 ![image](https://github.com/user-attachments/assets/5abac27f-b10d-4bbc-b239-bd0dc75508c9)
 
-## 5. Optimize Log Maximum Likelihood Estimation
+### 5. Optimize Log Maximum Likelihood Estimation
 
 For minimize,
 ![image](https://github.com/user-attachments/assets/987d3e2b-0cc4-4b2f-aebc-460057cd7455)
@@ -132,7 +132,7 @@ optimal_t = result.x
 ~~~
 
 
-## 6. Reconstruct Transformation Matrix and Physical Density Matrix
+### 6. Reconstruct Transformation Matrix and Physical Density Matrix
 
 ~~~
 # Compute Physical density matrix and Tunable matrix
@@ -154,7 +154,7 @@ array_to_latex(rho_p)
 
 
 
-## 4. Draw the graph with density matrix of test state and physical density matrix.
+### 7. Draw the graph with density matrix of test state and physical density matrix.
 
 ~~~
 real_amplitude = np.real(rho_p)
@@ -300,7 +300,7 @@ plt.show()
 ~~~
 ![image](https://github.com/user-attachments/assets/41c7e2cf-6e72-46a8-acfc-246205ea5842)
 
-## 7. Finally, check the fidelity between test rho and physical rho.
+### 8. Finally, check the fidelity between test rho and physical rho.
 
 ~~~
 def fidelity(rho1, rho2):
