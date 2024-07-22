@@ -9,8 +9,7 @@ comments: true
 
 {: .box-success}
 It is about how to construct directly **Qutrit tomography**. Here's my code below.
-
-https://kyongmini.github.io/qutrittomography/
+[About theory of Qutrit tomography](https://kyongmini.github.io/qutrittomography/)
 
 ### Before running this code, import them.
 
