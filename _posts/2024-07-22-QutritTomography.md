@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/55f1a875-a0cb-45cf-acba-58ab9c08a382)---
+---
 layout: post
 title: Single Qutrit Tomography
 subtitle: how to construct directly qutrit tomography?
