@@ -1,0 +1,23 @@
+<header>
+    <div class="header-container">
+        <div class="brand">
+             <a href="/" aria-label="Home">
+                <img src="/assets/images/cat-logo.png" alt="Kyongmin Kwon Logo" class="logo">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/study/">Study</a></li>
+                <li><a href="/projects/">Projects</a></li>
+                <li><a href="/publications/">Publications</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            {% if site.github_username %}
+            <a href="https://github.com/{{ site.github_username }}" target="_blank" aria-label="GitHub"><img src="https://img.icons8.com/ios-filled/28/ffffff/github.png" alt="GitHub"></a>
+            {% endif %}
+            <button id="darkModeToggle" class="dark-mode-toggle">🌙</button>
+        </div>
+    </div>
+</header>

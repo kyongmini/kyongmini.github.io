@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ko">
+{% include head.html %}
+<body>
+    <div id="particles-js"></div> {# 이 줄 추가 #}
+    {% include header.html %}
+    <main>
+        {{ content }}
+    </main>
+    {% include footer.html %}
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
