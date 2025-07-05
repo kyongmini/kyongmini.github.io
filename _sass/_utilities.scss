@@ -328,8 +328,9 @@ body.dark-mode #particles-js { // dark mode일 때 particles-js의 배경색 변
 footer {
     background-color: rgba($primary-color, 0.85);
     color: $text-light;
-    padding: 2rem; /* 푸터 패딩 증가 */
+    padding: 2rem; 
     text-align: center;
-    position: relative; /* 푸터 내에서 absolute positioning을 위한 기준점 설정 */
+    position: relative; 
+
 }
 
