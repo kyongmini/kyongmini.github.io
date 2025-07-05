@@ -144,6 +144,34 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // 이스터 에그 기능 추가
+    let clickCount = 0;
+    const easterEggCat = document.querySelector('.easter-egg-cat');
+    const requiredClicks = 5; // 고양이가 나타나기 위한 클릭 횟수
+
+    // Dark Mode Toggle의 클릭 이벤트에 이스터 에그 로직 추가
+    // (기존 Dark Mode 로직 위에 추가되므로 별도의 리스너 추가는 필요 없음)
+    // Dark Mode Toggle의 기존 클릭 이벤트 리스너가 이스터 에그 기능을 포함하도록 함
+    const originalDarkModeToggleClickHandler = darkModeToggle.onclick; // 기존 핸들러 저장 (있다면)
+    darkModeToggle.onclick = (event) => { // 새로운 핸들러 정의
+        if (originalDarkModeToggleClickHandler) {
+            originalDarkModeToggleClickHandler(event); // 기존 핸들러 실행
+        }
+        
+        clickCount++;
+        console.log('달 아이콘 클릭 횟수:', clickCount); // 디버깅용
+
+        if (clickCount === requiredClicks) {
+            easterEggCat.classList.add('show');
+            console.log('이스터 에그 고양이 나타남!'); // 디버깅용
+            // 한 번 나타나면 더 이상 카운트되지 않도록 리스너 제거 (선택 사항)
+            // darkModeToggle.removeEventListener('click', this); // 이 부분은 현재 적용 방식에선 복잡하므로 일단 제외
+            // 한 번 나타난 후에는 클릭 카운트를 리셋하거나, 더 이상 이스터 에그가 작동하지 않도록 할 수 있음
+            // clickCount = 0; // 필요시 리셋
+        }
+    };
+
+
     // AOS 초기화
     AOS.init({
         duration: 1000, // 애니메이션 지속 시간 (밀리초)
