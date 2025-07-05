@@ -28,46 +28,128 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Particle Animation for Hero Section (simplified example using basic shapes)
-    // For a more advanced effect, consider using a library like particles.js
-    const heroSection = document.querySelector('.hero-section');
-    if (heroSection) {
-        for (let i = 0; i < 50; i++) {
-            const particle = document.createElement('div');
-            particle.classList.add('particle');
-            particle.style.width = `${Math.random() * 5 + 2}px`;
-            particle.style.height = particle.style.width;
-            particle.style.backgroundColor = `rgba(100, 255, 218, ${Math.random() * 0.5 + 0.2})`; // Mint color with opacity
-            particle.style.borderRadius = '50%';
-            particle.style.position = 'absolute';
-            particle.style.left = `${Math.random() * 100}%`;
-            particle.style.top = `${Math.random() * 100}%`;
-            particle.style.animation = `particleMove ${Math.random() * 10 + 5}s infinite ease-in-out alternate`;
-            heroSection.appendChild(particle);
+    // particles.js 초기화 - 고품질 설정을 위한 부분
+    const particlesContainer = document.getElementById('particles-js');
+    const isHeroPage = document.querySelector('.hero-section');
+
+    if (particlesContainer && isHeroPage) { // particles-js div와 hero-section이 모두 있는 경우에만 초기화
+        particlesJS('particles-js', {
+          "particles": {
+            "number": {
+              "value": 80,
+              "density": {
+                "enable": true,
+                "value_area": 800
+              }
+            },
+            "color": {
+              "value": "#ffffff"
+            },
+            "shape": {
+              "type": "circle",
+              "stroke": {
+                "width": 0,
+                "color": "#000000"
+              },
+              "polygon": {
+                "nb_sides": 5
+              }
+            },
+            "opacity": {
+              "value": 0.5,
+              "random": false,
+              "anim": {
+                "enable": false,
+                "speed": 1,
+                "opacity_min": 0.1,
+                "sync": false
+              }
+            },
+            "size": {
+              "value": 3,
+              "random": true,
+              "anim": {
+                "enable": false,
+                "speed": 40,
+                "size_min": 0.1,
+                "sync": false
+              }
+            },
+            "line_linked": {
+              "enable": true,
+              "distance": 150,
+              "color": "#ffffff",
+              "opacity": 0.4,
+              "width": 1
+            },
+            "move": {
+              "enable": true,
+              "speed": 2,
+              "direction": "none",
+              "random": false,
+              "straight": false,
+              "out_mode": "out",
+              "bounce": false,
+              "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 1200
+              }
+            }
+          },
+          "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+              "onhover": {
+                "enable": true,
+                "mode": "grab"
+              },
+              "onclick": {
+                "enable": true,
+                "mode": "push"
+              },
+              "resize": true
+            },
+            "modes": {
+              "grab": {
+                "distance": 140,
+                "line_linked": {
+                  "opacity": 1
+                }
+              },
+              "bubble": {
+                "distance": 400,
+                "size": 40,
+                "duration": 2,
+                "opacity": 8,
+                "speed": 3
+              },
+              "repulse": {
+                "distance": 200,
+                "duration": 0.4
+              },
+              "push": {
+                "particles_nb": 4
+              },
+              "remove": {
+                "particles_nb": 2
+              }
+            }
+          },
+          "retina_detect": true
+        });
+    } else {
+        if (particlesContainer) {
+            particlesContainer.style.display = 'none'; // particles-js div가 있지만 hero-section이 없는 경우 숨김
         }
     }
+
+    // AOS 초기화
+    AOS.init({
+        duration: 1000, // 애니메이션 지속 시간 (밀리초)
+        easing: 'ease-out-quad', // 애니메이션 가속 곡선
+        once: true, // 한 번만 애니메이션 실행 (스크롤 올리고 내릴 때마다 반복 방지)
+        mirror: false, // 스크롤 시 애니메이션 반복 여부
+        anchorPlacement: 'top-bottom', // 요소의 어느 부분이 화면에 들어왔을 때 애니메이션을 시작할지
+    });
 });
-
-// Add particle animation keyframes to your style.scss or _utilities.scss
-// You would put this in _utilities.scss within a style block
-/*
-@keyframes particleMove {
-    0% {
-        transform: translate(0, 0) scale(1);
-        opacity: 1;
-    }
-    50% {
-        transform: translate(${Math.random() * 200 - 100}px, ${Math.random() * 200 - 100}px) scale(${Math.random() * 0.5 + 0.7});
-        opacity: 0.5;
-    }
-    100% {
-        transform: translate(0, 0) scale(1);
-        opacity: 1;
-    }
-}
-
-.particle {
-    position: absolute;
-    // initial styles are set by JS
-}
-*/

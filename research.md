@@ -14,7 +14,7 @@ permalink: /research/
     <h2>Academic Background</h2>
 
     <ul>
-        <li><strong>B.Sc. in Electronic Engineering & Quantum Information Convergence</strong> from Kyunghee University (Currently pursuing). @ <a href="http://nopd.khu.ac.kr/" target="_blank">NOPD Lab</a> under Professor Kwangjo Lee.</li>
+        <li><strong>B.Sc. in Electronic Engineering & Quantum Information Convergence</strong> from Kyunghee University @ <a href="http://nopd.khu.ac.kr/" target="_blank">NOPD Lab</a> under Professor Kwangjo Lee.</li>
         <li>[Placeholder for M.Sc., if applicable in the future]</li>
         <li>[Placeholder for Ph.D., if applicable in the future]</li>
     </ul>

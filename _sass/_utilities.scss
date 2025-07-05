@@ -2,7 +2,7 @@
 
 // Dark Mode
 body.dark-mode {
-    background-color: #071224; /* Modified to navy blue */
+    background-color: #101F3D; 
     color: $text-light;
     h1,
     h2,
@@ -10,17 +10,16 @@ body.dark-mode {
     h4,
     h5,
     h6 {
-    color: $text-light;
+        color: $text-light;
     }
     a {
-    color: $accent-color;
+        color: $accent-color;
     }
     .hero-section {
-    background-color: darken($primary-color, 5%);
+        background-color: darken($primary-color, 5%);
     }
-    
 }
- 
+
 // Global styles
 body {
     font-family: $font-family-base;
@@ -38,7 +37,7 @@ body {
 }
 
 main {
-    padding-top: 120px;
+    padding-top: 140px; /* 헤더 높이보다 크게 조정 */
     flex-grow: 1; /* Allow main to grow and push footer down */
 }
 
@@ -117,7 +116,7 @@ header {
     max-width: 1600px;
     margin: 0 auto;
     padding: 0 2rem;
-    height: 120px;
+    height: 120px; /* 헤더 더 두껍게 변경 */
 }
 
 .brand {
@@ -126,8 +125,8 @@ header {
 }
 
 .brand .logo {
-    width: 90px;
-    height: 90px;
+    width: 90px; /* 더 크게 변경 */
+    height: 90px; /* 더 크게 변경 */
     border-radius: 50%;
     border: 4px solid #000;
 }
@@ -153,11 +152,9 @@ header {
 .main-nav a {
     color: $text-light;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.3rem; /* 글자 크기 증가 */
     padding: 0.5rem;
     white-space: nowrap;
-    display: inline-flex; /* Icon alignment */
-    align-items: center; /* Icon alignment */
     &:hover {
         color: $accent-color;
     }
@@ -166,35 +163,17 @@ header {
     }
 }
 
-/* Specific class for the icon next to navigation text (e.g., Research) */
-.nav-text-icon {
-    width: 20px; /* Smaller size for text integration */
-    height: 20px;
-    margin-right: 0.4rem; /* Space between icon and text */
-    vertical-align: middle;
-    filter: invert(100%); /* White in light mode */
-}
-
-body.dark-mode .nav-text-icon {
-    filter: none; /* In dark mode, display original colors of the cat logo */
-}
-
-
 .social-icons {
     display: flex;
     align-items: center;
     a {
         margin-left: 1rem;
     }
-    img { /* This rule now specifically targets the cat logo used as a social icon */
+    img {
         width: 28px;
         height: 28px;
-        filter: invert(100%); /* White in light mode */
+        filter: invert(100%);
     }
-}
-
-body.dark-mode .social-icons img { /* Target img specifically within social-icons for dark mode */
-    filter: none; /* In dark mode, display original colors of the cat logo */
 }
 
 .dark-mode-toggle {
@@ -242,23 +221,18 @@ body.dark-mode .social-icons img { /* Target img specifically within social-icon
 
 @media (max-width: $breakpoint-small) {
     .main-nav a {
-        font-size: 1rem;
-    }
-    /* Adjust icon size for smaller screens if necessary */
-    .nav-text-icon {
-        width: 18px;
-        height: 18px;
+        font-size: 1.1rem; /* 작은 화면에서도 적절하게 조정 */
     }
     .social-icons img {
-        width: 24px;
-        height: 24px;
+        width: 28px;
+        height: 28px;
     }
 }
 
 // Hero Section
 .hero-section {
     min-height: 50vh;
-    background-color: $primary-color;
+    background-color: $primary-color; // 파티클이 위에 덮이므로 이 색상은 기본 배경색이 됨
     color: $text-light;
     display: flex;
     justify-content: center;
@@ -272,6 +246,18 @@ body.dark-mode .social-icons img { /* Target img specifically within social-icon
         color: $text-light;
         margin-bottom: 1rem;
     }
+}
+
+#particles-js { // particles.js 컨테이너 스타일 추가
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: $primary-color; // 파티클이 깔릴 배경색. hero-section의 background-color와 일치시키는 것이 좋음
+  background-image: url(''); // 필요하다면 여기에 배경 이미지 추가
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: 1; // hero-content 아래에 오도록
 }
 
 .hero-content {

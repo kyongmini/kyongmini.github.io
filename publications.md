@@ -11,13 +11,13 @@ permalink: /publications/
     <ul class="publication-list">
         <li>
             <h3>Title of Publication 1</h3>
-            <p>Authors: Kyongmin Kwon, et al.</p>
+            <p>Authors: Kyungmin Kwon, et al.</p>
             <p>Journal/Conference: [Journal Name], Volume(Issue): Pages (Year)</p>
             <p>DOI: <a href="https://doi.org/your-doi" target="_blank">10.xxxx/yyyyy</a></p>
         </li>
         <li>
             <h3>Title of Publication 2</h3>
-            <p>Authors: Other Author, Kyongmin Kwon, et al.</p>
+            <p>Authors: Other Author, Kyungmin Kwon, et al.</p>
             <p>Journal/Conference: [Journal Name], Volume(Issue): Pages (Year)</p>
             <p>DOI: <a href="https://doi.org/another-doi" target="_blank">10.xxxx/zzzzz</a></p>
         </li>
