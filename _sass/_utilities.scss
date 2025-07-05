@@ -1,0 +1,264 @@
+@import 'variables';
+
+// Dark Mode
+body.dark-mode {
+    background-color: $background-dark;
+    color: $text-light;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $text-light;
+    }
+    a {
+        color: $accent-color;
+    }
+    .hero-section {
+        background-color: darken($primary-color, 5%);
+    }
+}
+
+// Global styles
+body {
+    font-family: $font-family-base;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: $background-light;
+    color: $text-dark;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    // Sticky Footer Setup - ADDED/MODIFIED FOR STICKY FOOTER
+    display: flex; /* Make body a flex container */
+    flex-direction: column; /* Arrange children vertically */
+    min-height: 100vh; /* Ensure body takes at least full viewport height */
+}
+
+main {
+    padding-top: 120px;
+    flex-grow: 1; /* Allow main to grow and push footer down - ADDED */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $primary-color;
+    margin-top: $spacing-unit * 2;
+    margin-bottom: $spacing-unit;
+    font-weight: 700;
+}
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 2px;
+    transition: color 0.3s ease;
+    &:hover {
+        color: $accent-color;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: $accent-color;
+        transition: width 0.3s ease;
+    }
+    &:hover::after {
+        width: 100%;
+    }
+}
+
+.button {
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+
+    background-color: transparent;
+    border: 2px solid $text-light;
+    color: $text-light;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        background-color: $accent-color;
+        border-color: $accent-color;
+        color: $text-light;
+        box-shadow: 0 0 15px rgba($accent-color, 0.6);
+    }
+}
+
+// Header
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgba($primary-color, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    height: 100px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand .logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px solid #000;
+}
+
+.main-nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.main-nav li {
+    margin: 0 1.5rem;
+}
+
+.main-nav a {
+    color: $text-light;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    white-space: nowrap;
+    &:hover {
+        color: $accent-color;
+    }
+    &::after {
+        content: none;
+    }
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    a {
+        margin-left: 1rem;
+    }
+    img {
+        width: 28px;
+        height: 28px;
+        filter: invert(100%);
+    }
+}
+
+.dark-mode-toggle {
+    background: none;
+    border: none;
+    color: $text-light;
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    padding: 0;
+}
+
+// Responsive Grid
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+@media (max-width: $breakpoint-medium) {
+    main {
+        padding-top: 0;
+    }
+    header {
+        position: static;
+    }
+    .header-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .main-nav {
+        order: 3;
+        width: 100%;
+        margin-top: 1rem;
+        justify-content: space-around;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+}
+
+@media (max-width: $breakpoint-small) {
+    .main-nav a {
+        font-size: 1rem;
+    }
+}
+
+// Hero Section
+.hero-section {
+    min-height: 50vh;
+    background-color: $primary-color;
+    color: $text-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    h1 {
+        font-size: 3.5rem;
+        color: $text-light;
+        margin-bottom: 1rem;
+    }
+}
+
+.hero-content {
+    padding: 3rem;
+    max-width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-image {
+    display: none;
+}
+
+// Footer
+footer {
+    background-color: rgba($primary-color, 0.85);
+    color: $text-light;
+    padding: 2rem 0;
+    text-align: center;
+}

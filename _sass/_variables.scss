@@ -1,0 +1,20 @@
+$font-family-base: 'Noto Sans KR', sans-serif;
+
+// Color Palette
+$primary-color: #001f3f; // Dark Blue
+$secondary-color: #fcc419; // Yellow
+$accent-color: #1c7ed6; // Blue (Changed from Mint)
+$text-dark: #212529; // Dark Gray
+$text-light: #f8f9fa; // Light Gray
+$background-light: #ffffff; // White
+$background-dark: #343a40; // Dark Gray
+$border-color: #dee2e6; // Light Gray Border
+
+// Spacing
+$spacing-unit: 1rem;
+
+// Breakpoints
+$breakpoint-small: 576px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 992px;
+$breakpoint-xlarge: 1200px;

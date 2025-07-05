@@ -1,0 +1,29 @@
+title: "Kyongmin Kwon | Quantum Optics & Quantum information"
+email: kyongmini02@gmail.com # 실제 이메일 주소로 변경
+description: "Exploring Quantum Optics, Quantum Information Processing, and ML&RL."
+baseurl: "" # 사용자/조직 페이지이므로 비워둡니다.
+url: "http://kyongmini.github.io" # 실제 웹사이트 URL로 변경
+
+# Header Settings
+header_background: "#0a192f"
+
+# Social Media
+twitter_username: your_twitter_handle # 실제 Twitter/X 핸들로 변경
+linkedin_username: your_linkedin_handle # 실제 LinkedIn 핸들로 변경
+github_username: your_github_handle # 실제 GitHub 핸들로 변경
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
