@@ -2,7 +2,7 @@
 
 // Dark Mode
 body.dark-mode {
-    background-color: $background-dark;
+    background-color: #071224; /* Modified to navy blue */
     color: $text-light;
     h1,
     h2,
@@ -10,13 +10,13 @@ body.dark-mode {
     h4,
     h5,
     h6 {
-        color: $text-light;
+    color: $text-light;
     }
     a {
-        color: $accent-color;
+    color: $accent-color;
     }
     .hero-section {
-        background-color: darken($primary-color, 5%);
+    background-color: darken($primary-color, 5%);
     }
 }
 
@@ -30,7 +30,7 @@ body {
     color: $text-dark;
     transition: background-color 0.3s ease, color 0.3s ease;
 
-    // Sticky Footer Setup - ADDED/MODIFIED FOR STICKY FOOTER
+    // Sticky Footer Setup
     display: flex; /* Make body a flex container */
     flex-direction: column; /* Arrange children vertically */
     min-height: 100vh; /* Ensure body takes at least full viewport height */
@@ -38,7 +38,7 @@ body {
 
 main {
     padding-top: 120px;
-    flex-grow: 1; /* Allow main to grow and push footer down - ADDED */
+    flex-grow: 1; /* Allow main to grow and push footer down */
 }
 
 h1,
@@ -155,6 +155,8 @@ header {
     font-size: 1.2rem;
     padding: 0.5rem;
     white-space: nowrap;
+    display: inline-flex; /* Icon alignment */
+    align-items: center; /* Icon alignment */
     &:hover {
         color: $accent-color;
     }
@@ -163,17 +165,35 @@ header {
     }
 }
 
+/* Specific class for the icon next to navigation text (e.g., Research) */
+.nav-text-icon {
+    width: 20px; /* Smaller size for text integration */
+    height: 20px;
+    margin-right: 0.4rem; /* Space between icon and text */
+    vertical-align: middle;
+    filter: invert(100%); /* White in light mode */
+}
+
+body.dark-mode .nav-text-icon {
+    filter: none; /* In dark mode, display original colors of the cat logo */
+}
+
+
 .social-icons {
     display: flex;
     align-items: center;
     a {
         margin-left: 1rem;
     }
-    img {
+    img { /* This rule now specifically targets the cat logo used as a social icon */
         width: 28px;
         height: 28px;
-        filter: invert(100%);
+        filter: invert(100%); /* White in light mode */
     }
+}
+
+body.dark-mode .social-icons img { /* Target img specifically within social-icons for dark mode */
+    filter: none; /* In dark mode, display original colors of the cat logo */
 }
 
 .dark-mode-toggle {
@@ -222,6 +242,15 @@ header {
 @media (max-width: $breakpoint-small) {
     .main-nav a {
         font-size: 1rem;
+    }
+    /* Adjust icon size for smaller screens if necessary */
+    .nav-text-icon {
+        width: 18px;
+        height: 18px;
+    }
+    .social-icons img {
+        width: 24px;
+        height: 24px;
     }
 }
 
