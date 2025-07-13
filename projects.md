@@ -11,20 +11,20 @@ permalink: /projects/
     <div class="project-grid">
         <div class="project-item">
             <h3>Quantum Optics & Quantum Information Processing</h3>
-            <p>I study quantum optics both theoretically and experimentally. My research explores tools such as quantum state tomography and classical shadow techniques to efficiently reconstruct and analyze quantum states. These foundations support advances in quantum information processing, including quantum communication, computation, and sensing.</p>
+            <p>I study quantum optics both theoretically and experimentally. My research explores tools such as quantum state tomography and classical shadow techniques to efficiently reconstruct and analyze quantum states. These foundations support advances in quantum information processing, including quantum communication, and computation</p>
             <a href="#" class="button">View Details</a>
         </div>
         <div class="project-item">
-            <h3>Nonlinear Optics</h3>
-            <p>Not completed.</p>
-            <a href="#" class="button">View Details</a>
+            <h3>Quantum Optics & Nonlinear Optics Self-study</h3>
+            <p>Here's my study materials of Quantum Optics & Nonlinear Optics</p>
+            <a href="/projects/QONOstudy/" class="button">View Details</a>
         </div>
         <div class="project-item">
             <h3>Machine learning & Reinforcement Learning</h3>
             <p>We live in a world shaped by artificial intelligence. In both the quantum world and the classical world, we study and apply machine learning and reinforcement learning techniques to better understand complex systems, optimize behaviors, and solve challenging problems.</p>
-            <a href="#" class="button">View Details</a>
+            <a href="/projects/MaxDiffQL/" class="button">View Details</a>
         </div>
-        </div>
+
 </div>
 
 <style>
@@ -38,13 +38,13 @@ permalink: /projects/
         border: 1px solid #ddd;
         padding: 1.5rem;
         border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        box-shadow: 0 2px 5px rgba(189, 189, 189, 0.76);
         background-color: #fff;
     }
     body.dark-mode .project-item {
         background-color: #1a1a1a;
         border-color: #333;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
     .project-item h3 {
         color: #0a192f;
@@ -55,5 +55,33 @@ permalink: /projects/
     }
     .project-item p {
         margin-bottom: 1.5rem;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        border: 2px solid #0a192f; 
+        color: #0a192f;             
+        background-color: #fff;    
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+
+    .button:hover {
+        background-color:rgba(8, 107, 255, 0.75);
+        color: #fff;
+    }
+
+    body.dark-mode .button {
+        border-color: #64ffda;
+        color: #64ffda;
+        background-color:rgb(38, 0, 255);
+    }
+
+    body.dark-mode .button:hover {
+        background-color: #64ffda;
+        color: #1a1a1a;
     }
 </style>
