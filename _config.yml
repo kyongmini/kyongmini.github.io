@@ -6,7 +6,9 @@ url: "http://kyongmini.github.io"
 
 include:
   - files
-
+  - files/MDQL
+  - files/QOstudy
+  - files/NOstudy
 # Header Settings
 header_background: "#0a192f"
 
