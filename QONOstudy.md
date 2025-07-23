@@ -6,23 +6,26 @@ permalink: /projects/QONOstudy/
 
 <div class="container">
     <h1>Quantum Optics</h1>
+    <img src="/assets/images/books/gerry.jpg" alt="Introductory Quantum Optics" width="160">
     <p>Gerry, C.C., & Knight, P.L. (2023). Introductory quantum optics (2nd ed.). Cambridge University Press.</p>
 
     <h2>Study Materials</h2>
-        <p><a href='assets/files/QOstudy/QO_CH2-1.pdf'  download>CH2-1 Download PDF</a></p>
-        <p><a href='assets/files/QOstudy/QO_CH2-2.pdf'  download>CH2-2 Download PDF</a></p>
-        <p><a href='assets/files/QOstudy/QO_CH3.pdf'  download>CH3 Download PDF</a></p>
-        <p><a href='assets/files/QOstudy/QO_CH4-1.pdf'  download>CH4-1 Download PDF</a></p>
+        <p><a href='/assets/files/QOstudy/QO_CH2-1.pdf'  download>CH2-1 Download PDF</a></p>
+        <p><a href='/assets/files/QOstudy/QO_CH2-2.pdf'  download>CH2-2 Download PDF</a></p>
+        <p><a href='/assets/files/QOstudy/QO_CH3.pdf'  download>CH3 Download PDF</a></p>
+        <p><a href='/assets/files/QOstudy/QO_CH4-1.pdf'  download>CH4-1 Download PDF</a></p>
     <h1>Nonlinear Optics</h1>
-    <p>Not completed.</p>
+    <p>Boyd, R. W. (2020). Nonlinear optics (4th ed.). Academic Press.</p>
+    <img src="/assets/images/books/Boyd.jpg" alt="Introductory Quantum Optics" width="160">
+    <p>Yariv, A., & Yeh, P. (1984). Optical waves in crystals</p>
+    <img src="/assets/images/books/Yariv.jpg" alt="Introductory Quantum Optics" width="160">
 
     <h2>Study Materials</h2>
-        <p><a href='assets/files/NOstudy/NO_CH1.pdf' download>Download PDF</a></p>
+        <p><a href='/assets/files/NOstudy/NO_CH1.pdf' download>Download PDF</a></p>
 
 </div>
 
 <style>
-    /* These styles are copied from projects.md to ensure the 'project-grid' layout works here too */
     .project-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
