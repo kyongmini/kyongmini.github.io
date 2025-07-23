@@ -15,8 +15,8 @@ permalink: /projects/
             <a href="#" class="button">View Details</a>
         </div>
         <div class="project-item">
-            <h3>Quantum Optics & Nonlinear Optics Self-study</h3>
-            <p>Here's my study materials of Quantum Optics & Nonlinear Optics</p>
+            <h3>Electro-optics</h3>
+            <p>Not completed</p>
             <a href="/projects/QONOstudy/" class="button">View Details</a>
         </div>
         <div class="project-item">
