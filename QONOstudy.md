@@ -9,15 +9,15 @@ permalink: /projects/QONOstudy/
     <p>Gerry, C.C., & Knight, P.L. (2023). Introductory quantum optics (2nd ed.). Cambridge University Press.</p>
 
     <h2>Study Materials</h2>
-        <p><a href='files/QOstudy/QO_CH2-1.pdf'  download>CH2-1 Download PDF</a></p>
-        <p><a href='files/QOstudy/QO_CH2-2.pdf'  download>CH2-2 Download PDF</a></p>
-        <p><a href='files/QOstudy/QO_CH3.pdf'  download>CH3 Download PDF</a></p>
-        <p><a href='files/QOstudy/QO_CH4-1.pdf'  download>CH4-1 Download PDF</a></p>
+        <p><a href='assets/files/QOstudy/QO_CH2-1.pdf'  download>CH2-1 Download PDF</a></p>
+        <p><a href='assets/files/QOstudy/QO_CH2-2.pdf'  download>CH2-2 Download PDF</a></p>
+        <p><a href='assets/files/QOstudy/QO_CH3.pdf'  download>CH3 Download PDF</a></p>
+        <p><a href='assets/files/QOstudy/QO_CH4-1.pdf'  download>CH4-1 Download PDF</a></p>
     <h1>Nonlinear Optics</h1>
     <p>Not completed.</p>
 
     <h2>Study Materials</h2>
-        <p><a href='files/NOstudy/MDQL_1.pdf' download>Download PDF</a></p>
+        <p><a href='assets/files/NOstudy/NO_CH1.pdf' download>Download PDF</a></p>
 
 </div>
 

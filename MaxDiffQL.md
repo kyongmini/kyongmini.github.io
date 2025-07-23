@@ -9,7 +9,7 @@ permalink: /projects/MaxDiffQL/
     <p>Not completed.</p>
 
     <h2>Research Materials</h2>
-        <p><a href='files/MDQL/MaxDiffQL_0715.pdf' download> Download PPT</a></p>
+        <p><a href='/assets/files/MDQL/MaxDiffQL_0715.pdf' download> Download PPT</a></p>
 
 
 </div>
