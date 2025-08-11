@@ -21,19 +21,16 @@ permalink: /study/
 
 <div class="container">
     <h1>Nonlinear Optics</h1>
-
     <div class="book-row">
         <div class="book-entry">
             <img src="/assets/images/books/boyd.jpg" alt="Nonlinear Optics" class="book-cover">
             <p>Boyd, R. W. (2020). <em>Nonlinear optics</em> (4th ed.). Academic Press.</p>
         </div>
-
         <div class="book-entry">
             <img src="/assets/images/books/yariv.jpg" alt="Optical Waves in Crystals" class="book-cover">
             <p>Yariv, A., & Yeh, P. (1984). <em>Optical waves in crystals: Propagation and control of laser radiation</em>. Wiley.</p>
         </div>
     </div>
-
     <h2>Study Materials</h2>
     <p><a href='/assets/files/NOstudy/NO_CH1.pdf' download>Chapter 1 - Download PDF</a></p>
 </div>

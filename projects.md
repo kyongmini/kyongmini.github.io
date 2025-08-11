@@ -10,8 +10,8 @@ permalink: /projects/
 
     <div class="project-grid">
         <div class="project-item">
-            <h3>Quantum Optics & Quantum Information Processing</h3>
-            <p>I study quantum optics both theoretically and experimentally. My research explores tools such as quantum state tomography and classical shadow techniques to efficiently reconstruct and analyze quantum states. These foundations support advances in quantum information processing, including quantum communication, and computation</p>
+            <h3>Quantum Information Processing</h3>
+            <p>My research explores tools such as quantum state tomography and classical shadow techniques to efficiently reconstruct and analyze quantum states. These foundations support advances in quantum information processing, including quantum communication, and computation</p>
             <a href="#" class="button">View Details</a>
         </div>
         <div class="project-item">
