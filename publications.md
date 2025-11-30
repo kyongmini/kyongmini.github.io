@@ -5,8 +5,8 @@ permalink: /publications/
 ---
 
 <div class="container">
-    <h1>Publications</h1>
-    <p>A list of my peer-reviewed publications and preprints.</p>
+    <h1>Journals</h1>
+    <p>A list of my peer-reviewed journal publications.</p>
 
     <ul class="publication-list">
         <li>
@@ -45,7 +45,7 @@ permalink: /publications/
         color: #0a192f;
     }
     body.dark-mode .publication-list h3 {
-        color: #64ffda;
+        color: #a5d8ff; /* Soft Blue */
     }
     .publication-list p {
         margin-bottom: 0.3rem;

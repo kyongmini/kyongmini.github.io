@@ -2,8 +2,10 @@
 
 // Dark Mode
 body.dark-mode {
-    background-color: #0a192f; /* image_cbb8bc.png의 배경색과 유사하게 조정 */
+    background-color: #0a192f;
+    /* image_cbb8bc.png의 배경색과 유사하게 조정 */
     color: $text-light;
+
     h1,
     h2,
     h3,
@@ -12,9 +14,12 @@ body.dark-mode {
     h6 {
         color: $text-light;
     }
+
     a {
-        color: $accent-color; /* 이 부분은 아래에서 호버 효과 제거를 위해 다시 변경될 수 있음 */
+        color: $accent-color;
+        /* 이 부분은 아래에서 호버 효과 제거를 위해 다시 변경될 수 있음 */
     }
+
     .hero-section {
         background-color: darken($primary-color, 5%);
     }
@@ -31,14 +36,19 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 
     // Sticky Footer Setup
-    display: flex; /* Make body a flex container */
-    flex-direction: column; /* Arrange children vertically */
-    min-height: 100vh; /* Ensure body takes at least full viewport height */
+    display: flex;
+    /* Make body a flex container */
+    flex-direction: column;
+    /* Arrange children vertically */
+    min-height: 100vh;
+    /* Ensure body takes at least full viewport height */
 }
 
 main {
-    padding-top: 140px; /* 헤더 높이(120px) + 여유 공간 */
-    flex-grow: 1; /* Allow main to grow and push footer down */
+    padding-top: 140px;
+    /* 헤더 높이(120px) + 여유 공간 */
+    flex-grow: 1;
+    /* Allow main to grow and push footer down */
 }
 
 h1,
@@ -59,13 +69,15 @@ a {
     position: relative;
     padding-bottom: 2px;
     transition: color 0.3s ease;
+
     /* &:hover 호버 효과 제거 시작 */
     /* &:hover {
         color: $accent-color;
     } */
     /* &:hover 호버 효과 제거 끝 */
     &::after {
-        content: none; /* 밑줄 효과 제거 */
+        content: none;
+        /* 밑줄 효과 제거 */
     }
 }
 
@@ -93,7 +105,8 @@ a {
 header {
     position: fixed;
     width: 100%;
-    top: 0; /* 상단 빈 공간 제거를 위해 0으로 변경 */
+    top: 0;
+    /* 상단 빈 공간 제거를 위해 0으로 변경 */
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     background-color: rgba($primary-color, 0.85);
@@ -111,7 +124,8 @@ header {
     height: 120px;
 }
 
-.brand-link { /* 로고와 텍스트를 묶는 링크 */
+.brand-link {
+    /* 로고와 텍스트를 묶는 링크 */
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -129,7 +143,8 @@ header {
     font-size: 1.5rem;
     font-weight: 600;
     white-space: nowrap;
-    margin-left: 0.5rem; /* 로고와 텍스트 사이 간격 */
+    margin-left: 0.5rem;
+    /* 로고와 텍스트 사이 간격 */
 }
 
 .main-nav {
@@ -156,21 +171,69 @@ header {
     font-size: 1.45rem;
     padding: 0.5rem;
     white-space: nowrap;
-    &:hover { /* 호버 시 색깔 변하는 효과를 없앰 */
-        color: $text-light; /* 기본 색상과 동일하게 설정 */
+
+    &:hover {
+        /* 호버 시 색깔 변하는 효과를 없앰 */
+        color: $text-light;
+        /* 기본 색상과 동일하게 설정 */
     }
+
     &::after {
-        content: none; /* 밑줄 효과 제거 */
+        content: none;
+        /* 밑줄 효과 제거 */
     }
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba($primary-color, 0.95);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    top: 100%;
+    /* Position below the parent li */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Center align */
+    padding: 0.5rem 0;
+}
+
+.dropdown-content a {
+    color: $text-light;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+    /* Smaller font size for sub-menu */
+    text-align: center;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: $secondary-color;
+    }
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .social-icons {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
     a {
         margin-left: 1rem;
     }
+
     img {
         width: 28px;
         height: 28px;
@@ -199,10 +262,13 @@ header {
     main {
         padding-top: 0;
     }
+
     header {
         position: static;
-        top: 0; /* 모바일에서는 top 속성 제거 */
+        top: 0;
+        /* 모바일에서는 top 속성 제거 */
     }
+
     .header-container {
         flex-direction: row;
         flex-wrap: wrap;
@@ -226,6 +292,7 @@ header {
     .main-nav a {
         font-size: 1.1rem;
     }
+
     .social-icons img {
         width: 28px;
         height: 28px;
@@ -251,19 +318,21 @@ header {
     }
 }
 
-#particles-js { // particles.js 컨테이너 스타일
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: $primary-color; // 파티클이 깔릴 배경색 (light mode)
-  background-image: url('');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  z-index: 1; // hero-content 아래에 오도록
+#particles-js {
+    // particles.js 컨테이너 스타일
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $primary-color; // 파티클이 깔릴 배경색 (light mode)
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: 1; // hero-content 아래에 오도록
 }
 
-body.dark-mode #particles-js { // dark mode일 때 particles-js의 배경색 변경
+body.dark-mode #particles-js {
+    // dark mode일 때 particles-js의 배경색 변경
     background-color: #0a192f; // 다크 모드 배경색과 일치
 }
 
@@ -284,9 +353,11 @@ body.dark-mode #particles-js { // dark mode일 때 particles-js의 배경색 변
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
     a {
         margin-left: 1rem;
     }
+
     img {
         width: 28px;
         height: 28px;
@@ -305,11 +376,14 @@ body.dark-mode #particles-js { // dark mode일 때 particles-js의 배경색 변
 }
 
 .easter-egg-cat {
-    width: 150px; /* 크기는 그대로 유지 */
+    width: 150px;
+    /* 크기는 그대로 유지 */
     height: auto;
     position: absolute;
-    right: 1rem; /* 오른쪽 간격을 줄여 오른쪽 끝에 더 가깝게 이동 */
-    bottom: 8rem; /* 아래쪽 간격을 줄여 아래쪽 끝에 더 가깝게 이동 */
+    right: 1rem;
+    /* 오른쪽 간격을 줄여 오른쪽 끝에 더 가깝게 이동 */
+    bottom: 8rem;
+    /* 아래쪽 간격을 줄여 아래쪽 끝에 더 가깝게 이동 */
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
@@ -328,9 +402,7 @@ body.dark-mode #particles-js { // dark mode일 때 particles-js의 배경색 변
 footer {
     background-color: rgba($primary-color, 0.85);
     color: $text-light;
-    padding: 2rem; 
+    padding: 2rem;
     text-align: center;
-    position: relative; 
-
+    position: relative;
 }
-

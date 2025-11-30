@@ -51,7 +51,7 @@ permalink: /projects/
         margin-bottom: 0.8rem;
     }
     body.dark-mode .project-item h3 {
-        color: #64ffda;
+        color: #a5d8ff; /* Soft Blue */
     }
     .project-item p {
         margin-bottom: 1.5rem;
@@ -75,13 +75,13 @@ permalink: /projects/
     }
 
     body.dark-mode .button {
-        border-color: #64ffda;
-        color: #64ffda;
-        background-color:rgb(38, 0, 255);
+        border-color: #a5d8ff; /* Soft Blue */
+        color: #a5d8ff;        /* Soft Blue */
+        background-color: transparent; /* Removed deep blue background */
     }
 
     body.dark-mode .button:hover {
-        background-color: #64ffda;
-        color: #1a1a1a;
+        background-color: rgba(165, 216, 255, 0.1); /* Subtle hover effect */
+        color: #a5d8ff;
     }
 </style>
