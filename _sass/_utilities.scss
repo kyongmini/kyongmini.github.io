@@ -301,8 +301,10 @@ header {
 
 // Hero Section
 .hero-section {
-    min-height: 50vh;
-    background-color: $primary-color; // Fallback background color if particles.js doesn't load
+    min-height: 80vh;
+    /* Increased height */
+    background: linear-gradient(135deg, #0a192f 0%, #112240 100%);
+    /* Gradient background */
     color: $text-light;
     display: flex;
     justify-content: center;
@@ -310,38 +312,150 @@ header {
     text-align: center;
     position: relative;
     overflow: hidden;
+}
+
+.hero-content {
+    padding: 2rem;
+    max-width: 800px;
+    position: relative;
+    z-index: 2;
 
     h1 {
         font-size: 3.5rem;
-        color: $text-light;
-        margin-bottom: 1rem;
+        font-weight: 800;
+        margin-bottom: 1.5rem;
+        background: linear-gradient(to right, #64ffda, #1c7ed6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        line-height: 1.2;
+    }
+
+    p {
+        font-size: 1.2rem;
+        color: rgba($text-light, 0.8);
+        margin-bottom: 2.5rem;
+        line-height: 1.6;
     }
 }
 
-#particles-js {
-    // particles.js 컨테이너 스타일
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: $primary-color; // 파티클이 깔릴 배경색 (light mode)
-    background-image: url('');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    z-index: 1; // hero-content 아래에 오도록
+.hero-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
 }
 
-body.dark-mode #particles-js {
-    // dark mode일 때 particles-js의 배경색 변경
-    background-color: #0a192f; // 다크 모드 배경색과 일치
+.primary-btn {
+    background-color: transparent;
+    border: 2px solid $accent-color;
+    color: $accent-color;
+
+    &:hover {
+        background-color: rgba($accent-color, 0.1);
+        box-shadow: 0 0 20px rgba($accent-color, 0.3);
+    }
 }
 
+.secondary-btn {
+    border: 2px solid rgba($text-light, 0.5);
+    color: $text-light;
 
-.hero-content {
-    padding: 3rem;
-    max-width: 100%;
-    position: relative;
-    z-index: 2; // 파티클 위에 텍스트가 오도록
+    &:hover {
+        border-color: $text-light;
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+}
+
+// Section Styles
+.section-padding {
+    padding: 5rem 1.5rem;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+
+    h2 {
+        font-size: 2.5rem;
+        color: $primary-color;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        color: #666;
+        font-size: 1.1rem;
+    }
+}
+
+// Expertise Grid
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.expertise-card {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-icon {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    h3 {
+        color: $primary-color;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        color: #666;
+        line-height: 1.6;
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+}
+
+// Dark Mode Adjustments
+body.dark-mode {
+    .section-header h2 {
+        color: $text-light;
+    }
+
+    .section-header p {
+        color: rgba($text-light, 0.7);
+    }
+
+    .expertise-card {
+        background-color: #112240;
+        border-color: #233554;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+        h3 {
+            color: $text-light;
+        }
+
+        p {
+            color: rgba($text-light, 0.7);
+        }
+
+        &:hover {
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            background-color: lighten(#112240, 3%);
+        }
+    }
 }
 
 .hero-image {
@@ -399,10 +513,105 @@ body.dark-mode #particles-js {
 }
 
 // Footer
-footer {
-    background-color: rgba($primary-color, 0.85);
+.site-footer {
+    background-color: #0a192f;
+    /* Dark background */
     color: $text-light;
-    padding: 2rem;
-    text-align: center;
+    padding: 1.5rem 0 1rem;
+    /* Further reduced padding */
+    margin-top: 4rem;
+    /* Added top margin to separate from content */
     position: relative;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    /* Reduced gap */
+}
+
+.footer-col {
+    h3 {
+        color: $text-light;
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+        position: relative;
+        padding-bottom: 0.4rem;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 25px;
+            height: 2px;
+            background-color: $accent-color;
+        }
+    }
+
+    p {
+        color: rgba($text-light, 0.7);
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        margin-bottom: 0.6rem;
+    }
+
+    a {
+        color: rgba($text-light, 0.7);
+        text-decoration: none;
+        transition: color 0.3s ease;
+        font-size: 0.9rem;
+
+        &:hover {
+            color: $accent-color;
+        }
+    }
+}
+
+.footer-social {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 0.8rem;
+
+    a {
+        display: inline-block;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: translateY(-2px);
+        }
+    }
+
+    img {
+        width: 20px;
+        height: 20px;
+        filter: invert(100%);
+        /* Ensure icons are white */
+    }
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+
+    p {
+        color: rgba($text-light, 0.5);
+        font-size: 0.8rem;
+    }
 }

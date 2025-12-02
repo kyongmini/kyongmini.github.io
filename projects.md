@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Projects
+title: Research Material
 permalink: /projects/
 ---
 
 <div class="container">
-    <h1>My Projects</h1>
+    <h1>Research Material</h1>
     <p>Here are some of the key projects I'm currently working on or have completed.</p>
 
     <div class="project-grid">

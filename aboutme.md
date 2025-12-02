@@ -5,12 +5,11 @@ permalink: /aboutme/
 ---
 
 <div class="container">
-    <!-- [NEW] Profile photo block -->
     <div class="profile-photo">
-        <img src="/assets/images/kkm.jpg" alt="Kyungmin Kwon profile photo">
+        <img src="/assets/images/kkm.jpg" alt="Kyungmin Kwon">
     </div>
 
-    <h1>My Research Focus</h1>
+    <h1>Kyungmin Kwon</h1>
     <p>
     Thanks for visiting! If you’d like to get in touch, please email
     <a class="prof-link copy-email" href="mailto:kyongmini@khu.ac.kr">kyongmini@khu.ac.kr</a>

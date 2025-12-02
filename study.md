@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Research
+title: Quantum Optics
 permalink: /study/
 ---
 
@@ -18,6 +18,8 @@ permalink: /study/
     <p><a href='/assets/files/QOstudy/QO_CH3.pdf' download>Chapter 3 - Download PDF</a></p>
     <p><a href='/assets/files/QOstudy/QO_CH4-1.pdf' download>Chapter 4 - Download PDF</a></p>
 </div>
+
+
 
 
 

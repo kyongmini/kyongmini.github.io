@@ -1,6 +1,7 @@
-title: "Kyongmin Kwon | Quantum Optics & Quantum information"
-email: kyongmini02@gmail.com 
-description: "Exploring Quantum Optics, Quantum Information Processing, and ML&RL."
+title: Kyungmin Kwon
+email: kyongmini@snu.ac.kr
+description: >- # this means to ignore newlines until "baseurl:"
+  Research website of Kyungmin Kwon.
 baseurl: "" 
 url: "http://kyongmini.github.io" 
 
