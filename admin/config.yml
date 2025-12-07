@@ -1,6 +1,7 @@
 backend:
-  name: git-gateway
-  branch: main # Branch to update (optional; defaults to master)
+  name: github
+  repo: kyongmini/kyongmini.github.io
+  branch: main # Branch to update
 
 media_folder: "assets/images/uploads" # Media files will be stored in the repo under assets/images/uploads
 public_folder: "/assets/images/uploads" # The src attribute for uploaded media will begin with /assets/images/uploads
