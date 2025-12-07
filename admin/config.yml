@@ -1,0 +1,59 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+media_folder: "assets/images/uploads" # Media files will be stored in the repo under assets/images/uploads
+public_folder: "/assets/images/uploads" # The src attribute for uploaded media will begin with /assets/images/uploads
+
+collections:
+  - name: "research"
+    label: "Research Pages"
+    files:
+      - file: "research-fpga.md"
+        label: "FPGA Project"
+        name: "fpga"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
+          - {label: "Permalink", name: "permalink", widget: "hidden", default: "/research-fpga/"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "research-machine-learning.md"
+        label: "Machine Learning"
+        name: "machine-learning"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
+          - {label: "Permalink", name: "permalink", widget: "hidden", default: "/research-machine-learning/"}
+          - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "study"
+    label: "Study Pages"
+    files:
+      - file: "study-fpga.md"
+        label: "FPGA Study"
+        name: "study-fpga"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
+          - {label: "Permalink", name: "permalink", widget: "hidden", default: "/study-fpga/"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "study.md"
+        label: "Quantum Optics Study"
+        name: "study-qo"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
+          - {label: "Permalink", name: "permalink", widget: "hidden", default: "/study/"}
+          - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "pages"
+    label: "Other Pages"
+    files:
+      - file: "aboutme.md"
+        label: "About Me"
+        name: "aboutme"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
+          - {label: "Permalink", name: "permalink", widget: "hidden", default: "/aboutme/"}
+          - {label: "Body", name: "body", widget: "markdown"}
