@@ -1,3 +1,4 @@
+@use 'sass:color';
 @import 'variables';
 
 // Dark Mode
@@ -21,7 +22,7 @@ body.dark-mode {
     }
 
     .hero-section {
-        background-color: darken($primary-color, 5%);
+        background-color: color.adjust($primary-color, $lightness: -5%);
     }
 }
 
@@ -453,7 +454,7 @@ body.dark-mode {
 
         &:hover {
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-            background-color: lighten(#112240, 3%);
+            background-color: color.adjust(#112240, $lightness: 3%);
         }
     }
 }

@@ -9,7 +9,7 @@ title: Home
         <p>Interested in Quantum Optics, Quantum Information, and AI.</p>
         <div class="hero-buttons">
             <a href="/aboutme/" class="button primary-btn">About Me</a>
-            <a href="/projects/" class="button secondary-btn">My Research</a>
+            <a href="/projects/" class="button secondary-btn">Research</a>
         </div>
     </div>
 </section>
