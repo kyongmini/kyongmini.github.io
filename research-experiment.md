@@ -1,34 +1,34 @@
 ---
 layout: default
-title: FPGA Project
-permalink: /research-fpga/
+title: Quantum Information Experiment
+permalink: /research-experiment/
 ---
 
 <div class="notion-container">
     <div class="notion-cover">
-        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Cover">
+        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Cover">
     </div>
     <div class="notion-content">
-        <div class="notion-icon">⚡</div>
-        <h1 class="notion-title">FPGA Project</h1>
+        <div class="notion-icon">⚛️</div>
+        <h1 class="notion-title">Quantum Information Experiment</h1>
         
         <div class="notion-callout">
             <span class="emoji">💡</span>
-            <span class="text">This page is designed to document my FPGA projects and learning progress.</span>
+            <span class="text">This page documents my experimental work in Quantum Information Science.</span>
         </div>
 
-        <h2 class="notion-h2">Project Overview</h2>
-        <p class="notion-p">Description of the FPGA project goes here. You can edit this text just like a Notion page.</p>
+        <h2 class="notion-h2">Experiment Overview</h2>
+        <p class="notion-p">Details about the experimental setup and goals will be added here. Focusing on quantum state tomography and entanglement generation.</p>
 
-        <h2 class="notion-h2">To Do List</h2>
+        <h2 class="notion-h2">Current Status</h2>
         <ul class="notion-list">
-            <li><input type="checkbox" disabled> Setup Vivado Environment</li>
-            <li><input type="checkbox" disabled> Blinking LED Tutorial</li>
-            <li><input type="checkbox" disabled> UART Communication</li>
+            <li><input type="checkbox" disabled> Optical Table Setup</li>
+            <li><input type="checkbox" disabled> Laser Alignment</li>
+            <li><input type="checkbox" disabled> Coincidence Counting Measurement</li>
         </ul>
 
-        <h2 class="notion-h2">Notes</h2>
-        <p class="notion-p">Add your daily notes and findings here.</p>
+        <h2 class="notion-h2">Data & Results</h2>
+        <p class="notion-p">Experimental data and analysis results.</p>
     </div>
 </div>
 
