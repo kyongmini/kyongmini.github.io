@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Quantum Optics
+title: Quantum Optics & Quantum Information
 permalink: /study/
 ---
 
@@ -9,14 +9,16 @@ permalink: /study/
         <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Cover">
     </div>
     <div class="notion-content">
-        <div class="notion-icon">📖</div>
-        <h1 class="notion-title">Quantum Optics</h1>
+        <div class="notion-icon">⚛️</div>
+        <h1 class="notion-title">Quantum Optics & Quantum Information</h1>
         
         <div class="notion-callout">
             <span class="emoji">💡</span>
-            <span class="text">Self-study notes and materials for Quantum Optics.</span>
+            <span class="text">Self-study notes and materials for Quantum Optics and Quantum Information.</span>
         </div>
 
+        <!-- Quantum Optics Section -->
+        <h2 class="section-title">Quantum Optics</h2>
         <div class="intro-section">
             <div class="book-info">
                 <img src="/assets/images/books/gerry.jpg" alt="Introductory Quantum Optics" class="book-cover">
@@ -55,7 +57,7 @@ permalink: /study/
                 </div>
             </div>
 
-            <!-- Chapter 3 -->
+            <!-- Chapter 3: Coherent States-->
             <div class="meeting-item">
                 <div class="meeting-date">
                     <span class="day">03</span>
@@ -70,21 +72,58 @@ permalink: /study/
                 </div>
             </div>
 
-            <!-- Chapter 4 -->
+            <!-- Chapter 5: Quantum Coherence Functions -->
             <div class="meeting-item">
                 <div class="meeting-date">
-                    <span class="day">04</span>
-                    <span class="month">Part 1</span>
+                    <span class="day">05</span>
+                    <span class="month">Chap</span>
                 </div>
                 <div class="meeting-content">
-                    <h3>Chapter 4</h3>
-                    <p>Study material for Chapter 4, Part 1.</p>
-                    <a href="/assets/files/QOstudy/QO_CH4-1.pdf" class="download-btn" download>
+                    <h3>Chapter 5</h3>
+                    <p>Study material for Chapter 5.</p>
+                    <a href="/assets/files/QOstudy/QO_CH5.pdf" class="download-btn" download>
+                        Download PDF
+                    </a>
+                </div>
+            </div>
+            <!-- Chapter 6: Beam Splitters and Interferometers -->
+            <div class="meeting-item">
+                <div class="meeting-date">
+                    <span class="day">06</span>
+                    <span class="month">Chap</span>
+                </div>
+                <div class="meeting-content">
+                    <h3>Chapter 6</h3>
+                    <p>Study material for Chapter 6.</p>
+                    <a href="/assets/files/QOstudy/QO_CH6.pdf" class="download-btn" download>
+                        Download PDF
+                    </a>
+                </div>
+            </div>
+            <!-- Chapter 7: Nonclassical Light -->
+            <div class="meeting-item">
+                <div class="meeting-date">
+                    <span class="day">07</span>
+                    <span class="month">Chap</span>
+                </div>
+                <div class="meeting-content">
+                    <h3>Chapter 7</h3>
+                    <p>Study material for Chapter 7.</p>
+                    <a href="/assets/files/QOstudy/QO_CH7.pdf" class="download-btn" download>
                         Download PDF
                     </a>
                 </div>
             </div>
         </div>
+
+        <!-- Divider -->
+        <hr class="notion-hr">
+
+        <!-- Quantum Information Section -->
+        <h2 class="section-title">Quantum Information</h2>
+        
+        <p class="notion-p">Content coming soon...</p>
+
     </div>
 </div>
 
@@ -148,6 +187,29 @@ permalink: /study/
     .notion-callout .emoji {
         font-size: 24px;
         margin-right: 12px;
+    }
+    
+    .section-title {
+        font-size: 30px;
+        font-weight: 600;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        color: #37352f;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+    }
+
+    .notion-hr {
+        border: none;
+        border-bottom: 1px solid #eee;
+        margin: 40px 0;
+    }
+
+    .notion-p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 1em;
+        color: #37352f;
     }
 
     /* Custom Study Styles */
@@ -268,7 +330,9 @@ permalink: /study/
     }
     body.dark-mode .notion-title, 
     body.dark-mode .notion-callout,
-    body.dark-mode .meeting-content h3 {
+    body.dark-mode .meeting-content h3,
+    body.dark-mode .section-title,
+    body.dark-mode .notion-p {
         color: rgba(255, 255, 255, 0.9);
     }
     body.dark-mode .notion-callout {

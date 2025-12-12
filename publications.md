@@ -32,18 +32,7 @@ permalink: /publications/
                 </div>
             </div>
 
-            <!-- Publication Card 2 -->
-            <div class="pub-card">
-                <div class="pub-year">2024</div>
-                <div class="pub-details">
-                    <h3 class="pub-title">Title of Publication 2</h3>
-                    <p class="pub-authors">Other Author, Kyungmin Kwon, et al.</p>
-                    <p class="pub-venue">Journal Name, Volume(Issue): Pages</p>
-                    <div class="pub-links">
-                        <a href="#" class="pub-link doi">DOI</a>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
 </div>

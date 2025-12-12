@@ -16,7 +16,9 @@ permalink: /projects/qst
     <p><a href='/assets/files/QOstudy/QO_CH2-1.pdf' download>Chapter 2 (1) - Download PDF</a></p>
     <p><a href='/assets/files/QOstudy/QO_CH2-2.pdf' download>Chapter 2 (2) - Download PDF</a></p>
     <p><a href='/assets/files/QOstudy/QO_CH3.pdf' download>Chapter 3 - Download PDF</a></p>
-    <p><a href='/assets/files/QOstudy/QO_CH4-1.pdf' download>Chapter 4 - Download PDF</a></p>
+    <p><a href='/assets/files/QOstudy/QO_CH5.pdf' download>Chapter 5 - Download PDF</a></p>
+    <p><a href='/assets/files/QOstudy/QO_CH6.pdf' download>Chapter 6 - Download PDF</a></p>
+    <p><a href='/assets/files/QOstudy/QO_CH7.pdf' download>Chapter 7 - Download PDF</a></p>
 </div>
 
 <div class="container">
