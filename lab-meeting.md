@@ -53,6 +53,22 @@ permalink: /lab-meeting/
                     </a>
                 </div>
             </div>
+
+            <!-- Meeting Item -->
+            <div class="meeting-item">
+                <div class="meeting-date">
+                    <span class="day">30</span>
+                    <span class="month">Dec</span>
+                    <span class="year">2025</span>
+                </div>
+                <div class="meeting-content">
+                    <h3>Weekly Research Update</h3>
+                    <p>Introduction to EO Šolc filter & Simulation on PPKN EO Šolc filter</p>
+                    <a href="/assets/files/labmeetings/20251230.pdf" class="download-btn" download>
+                        Download PDF
+                    </a>
+                </div>
+            </div>
         </div>
 
         <h2 class="notion-h2">Schedule</h2>
