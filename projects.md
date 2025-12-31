@@ -26,6 +26,7 @@ permalink: /projects/
         </div>
 
 </div>
+</div>
 
 <style>
     .project-grid {
